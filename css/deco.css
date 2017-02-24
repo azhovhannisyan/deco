@@ -2000,6 +2000,7 @@ input[type=checkbox]:checked+div {
     width: 100%;
     left: 0;
     padding-right: 45px;
+    pointer-events: none;
 }
 
 .indicator {
@@ -2753,9 +2754,6 @@ footer input:-moz-placeholder {
     margin-bottom: 10px;
 }
 
-.order-form .dropdown button, .personal-edit .dropdown button, .order-form .dropdown button:hover, .order-form .dropdown button:focus, .order-form .open>.dropdown-toggle.btn-default:hover, .order-form .open>.dropdown-toggle.btn-default {
-    color: #c9c3c1;
-}
 
 .order-form .inputs {
     position: relative;
@@ -2818,11 +2816,21 @@ footer input:-moz-placeholder {
     border: 1px solid #89abc9;
 }
 
+.order-form.contact-page .dropdown button, .order-form.contact-page .dropdown button:hover, .order-form.contact-page .dropdown button:focus, .order-form.contact-page .open>.dropdown-toggle.btn-default:hover, .order-form.contact-page .open>.dropdown-toggle.btn-default {
+    background: none;
+    color: #c9c3c1;
+    border: 1px solid #d0d0d2;
+    margin-bottom: 10px;
+}
+
+
+
 .order-form .dropdown span {
     float: right;
     color: #d0d0d2;
     font-weight: normal;
     font-size: 14px;
+    margin-top: 2px;
 }
 
 .order-form .dropdown .dropdown-menu, .personal-edit .dropdown .dropdown-menu{
@@ -3046,6 +3054,10 @@ footer input:-moz-placeholder {
 
 .contact-page .register {
     text-align: right;
+}
+
+.contact-page textarea {
+    height: 170px;
 }
 
 .stores {
