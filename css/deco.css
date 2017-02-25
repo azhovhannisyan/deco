@@ -2365,7 +2365,7 @@ input[type=checkbox]:checked+div {
     height: 370px;
 }
 
-.product-page .multi-item-carousel .carousel-control {
+.product-page .multi-item-carousel .carousel-control, .article-page .multi-item-carousel .carousel-control {
     display: block;
     color: #d0d2d3;
     font-size: 40px;
@@ -2377,7 +2377,11 @@ input[type=checkbox]:checked+div {
     top: 225px;
 }
 
-.product-page .multi-item-carousel .carousel-control:hover {
+ .article-page .multi-item-carousel .carousel-control {
+    top: 180px;
+}
+
+.product-page .multi-item-carousel .carousel-control:hover, .article-page .multi-item-carousel .carousel-control:hover {
     color: #ed3624;
 }
 
@@ -2387,6 +2391,14 @@ input[type=checkbox]:checked+div {
 
 .product-page .multi-item-carousel .carousel-control.right {
     right: 25px;
+}
+
+.article-page .multi-item-carousel .carousel-control.left {
+    left: -45px;
+}
+
+.article-page .multi-item-carousel .carousel-control.right {
+    right: -10px;
 }
 
 .product-page .thumbnail {
@@ -2598,6 +2610,10 @@ footer input {
     box-sizing: border-box;
 }
 
+footer.background-white input {
+    background: #f6f4f2;
+}
+
 footer input::-webkit-input-placeholder {
     color: #70675d;
     font-style: italic;
@@ -2706,11 +2722,19 @@ footer input:-moz-placeholder {
     margin-top: 0;
 }
 
+
 .page-subtitle {
-    color: #002d57;
+    color: #135693;
+    font-family: openSansLight;
+    font-weight: bold;
     font-size: 18px;
     margin: 20px 0;
 }
+
+.services.single {
+    padding-bottom: 50px;
+}
+
 
 .services-image {
     height: 350px;
@@ -2788,6 +2812,9 @@ footer input:-moz-placeholder {
 
 .order-form.register-page {
     min-height: 750px; 
+}
+.order-form .dropdown button, .order-form .dropdown button:hover, .order-form.r .dropdown button:focus, .order-form .open>.dropdown-toggle.btn-default:hover, .order-form .open>.dropdown-toggle.btn-default {
+    color: #c9c3c1;
 }
 .agreement {
     text-align: left;
@@ -3012,6 +3039,19 @@ footer input:-moz-placeholder {
    color: #c9c3c1;
 }
 
+.order-form input::-webkit-input-placeholder {
+     color: #c9c3c1;
+}
+.order-form input::-moz-placeholder { 
+  color: #c9c3c1;
+}
+.order-form input:-ms-input-placeholder { 
+  color: #c9c3c1;
+}
+.order-form input:-moz-placeholder { 
+   color: #c9c3c1;
+}
+
 .information-part {
     background: white;
     min-height: 300px;
@@ -3078,6 +3118,15 @@ footer input:-moz-placeholder {
 .article-page .page-subtitle {
     font-size: 24px;
     font-family: openSansLight;
+}
+
+.article-page .carousel-inner .col-md-4 {
+    padding: 0;
+    margin-right: 30px;
+    width: 370px;
+}
+.article-page .carousel-inner .item .col-md-4:last-of-type {
+    margin-right: 0;
 }
 
 .article-author, .article-date {

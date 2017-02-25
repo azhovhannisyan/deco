@@ -9,13 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Deco/Help</title>
+    <title>Deco/SErvice</title>
 
-    <!-- Bootstrap Core CSS -->
+   <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!--Font Awesome -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/deco-icons.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/deco.css" rel="stylesheet">
@@ -34,299 +35,401 @@
 </head>
 
 <body ng-app="decoApp">
-   <div class="chat display-none">
-       <div id="rotate">
-            <button class="consulting">ONLINE CONSULTING </button>
-            <span class="circle glyphicon glyphicon-chevron-down"></span>
-        </div> 
-        <div class="chat-opened">
-            <div class="type-here">
-                <div class="fa fa-paperclip"></div>
-                <input type="text" placeholder="type here...">
-                <div class="fa fa-paper-plane"></div>
-            </div>
-            <ul class="messages">
-                <li class="message">
-                    <div class="message-image" style="background-image: url(img/profile-photo.jpg)">
-                        <div class="online-status"></div>
-                    </div>
-                    <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
-                </li>
-                <li class="message">
-                    <div class="message-image" style="background-image: url(img/profile-photo.jpg)">
-                        <div class="online-status"></div>
-                    </div>
-                    <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
-                </li>
-            </ul>
-            
-        </div>
-   </div>  
-   <div class="container-fluid margin-padding-0 gray">
-        <div class=" container discounted display-none">
-            <div class="col-md-6 margin-padding-0">
-                <div class="discounted-1">
-                    <div class="discounted-shadow"></div>
-                     <div class="discounted-text1">
-                        <div class="col-md-7">
-                            <div class="top-extra-40">MODENA</div>
-                            <div class="top-title">Italian furniture</div>
-                            <div class="top-subtitle">Nam dui arcu, lacinia sit amet varius non, posuere non turpis. Pellentesque condimentum condimentum nisi, ut posuere urna auctor</div>
-                            <div class="top-see-more">see more</div>
-                        </div>
-                        <div class="col-md-5 padding-bottom-20">
-                            <div class="top-extra-100">25%</div>
-                            <div class="top-title margin-top-0">SAMMER SALE</div>
-                        </div>
-                    </div>
-                </div>    
-            </div>
-            <div class="col-md-6 margin-padding-0">
-                <div class="discounted-2">
-                    <div class="discounted-shadow"></div>
-                    <div class="discounted-text2">
-                        <div class="col-md-6">
-                            <div class="top-title">MODENA</div>
-                            <div class="top-subtitle">Italian furniture</div>
-                            <button class="btn btn-white view">view</button>
-                        </div>
-                        <div class="col-md-6 padding-bottom-20">
-                            <div class="top-extra">5%</div>
-                            <div class="top-subtitle">HOT OFFERS</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="discounted-3">
-                    <div class="discounted-shadow"></div>
-                    <div class="discounted-text2">
-                        <div class="col-md-6">
-                            <div class="top-title">MODENA</div>
-                            <div class="top-subtitle">Italian furniture</div>
-                            <button class="btn btn-white view">view</button>
-                        </div>
-                        <div class="col-md-6 padding-bottom-20">
-                            <div class="top-extra">5%</div>
-                            <div class="top-subtitle">HOT OFFERS</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container header-part">
-        <div class="row">
-            <div class="sale"><span>SALE</span> <br/>
-                <span class="glyphicon glyphicon-menu-down"></span>
-                <span class="glyphicon glyphicon-menu-up display-none"></span>
-            </div>            
-            <div class="col-md-6 info">
-                <div class="col-md-6">Tel.:+374 60 00 44, &nbsp; +374 91 44 00 44,</div>
-                <div class="col-md-6">working hours 09:00-18:00</div>
-            </div>
-            <div class="col-md-5 col-md-offset-1">
-                <div class="col-md-2 col-md-offset-2 icons activated account">
-                    <i class="fa fa-user"></i>
-                    <div class="icon-text">ACCOUNT</div>  
-                    <div class="account-opened display-none">
-                        <!--<div class="not-loged-in">
-                            <div class="blue">Login to your account</div>
-                            <div class="grey margin-top-10">New user? Register here</div>
-                        </div>-->
-                        <div class="loged-in">
-                            <ul>
-                                <li class="welcome">WELCOME, <br/> ARAYIK</li>
-                                <li>My personal information</li>
-                                <li>My coupon wallet</li>
-                                <li>My purchase history</li>
-                                <li class="logout">logout</li>
-                            </ul>
-                        </div>
-                    </div>          
-                </div>
-                <div class="col-md-2 icons">
-                    <a href="help.html">
-                        <i class="fa fa-commenting"></i>
-                        <div class="icon-text">HELP</div> 
-                    </a>
-                </div>
-                <div class="col-md-2 icons">
-                    <i class="fa fa-file-text"></i>
-                    <div class="icon-text">WHISHLIST</div>
-                    <div class="whishlist-circle-o red"><i class="fa fa-dot-circle-o"></i></div>             
-                </div>
-                <div class="col-md-2 icons">
-                    <i class="fa fa-shopping-cart"></i>
-                    <div class="icon-text">CART</div>
-                    <span class="cart-quanity red">1</span> 
-                </div>
-                <div class="col-md-2 lang">
-                    <div class="dropdown">
-                        <div class="dropdown-toggle lang-select" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            ARM <br/> <span class="glyphicon glyphicon-menu-down"></span>
-                        </div>
-                        <ul class="dropdown-menu lang-options" aria-labelledby="dropdownMenu2">
-                            <li><a href="#">ՀԱՅ</a></li>
-                            <li><a href="#">РУС</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-md-2">
-                <a href="index.html">
-                    <div class="deco-logo"></div>
-                </a>
-            </div>
-            <div class="col-md-5">
-                <div class="input-group store">
-                    <div class="store-opened display-none">
-                        <div class="font-size-20 blue">DECO lorem ipsum dolor sit amet</div>
-                        <div class="margin-top-10"> <i class="fa fa-volume-control-phone red font-size-20"></i> &nbsp; +374 91 44 00 44</div>
-                        <div class="margin-top-10"><i class="fa fa-map-marker red font-size-20"></i> &nbsp; 585 West Hunt Club Rd Nepean, Ontario, K2G 5X6</div>
-                        <div class="change-store">CHANGE STORE</div>
+    <header>
+        <div class="chat" ng-class="{right0: chatOpen}" ng-init="chatOpen=false">
+            <div id="rotate">
+                    <button class="consulting">ONLINE CONSULTING </button>
+                    <span class="circle glyphicon glyphicon-chevron-down" ng-click="chatOpen=!chatOpen"></span>
+                </div> 
+                <div class="chat-opened">
+                    <div class="type-here">
+                        <div class="fa fa-paperclip"></div>
+                        <input type="textarea" cols="10" placeholder="type here...">
+                        <div class="fa fa-paper-plane"></div>
                     </div>
-                    <input type="text" class="search" placeholder="MY STORE">
-                    <i class="glyphicon glyphicon-menu-down right"></i>
-                    <i class="glyphicon glyphicon-menu-up right display-none"></i>
+                    <ul class="messages">
+                        <li class="message">
+                            <div class="message-image" style="background-image: url(img/profile-photo.jpg)">
+                                <div class="online-status"></div>
+                            </div>
+                            <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
+                        </li>
+                        <li class="message answer">
+                            <div class="message-image float-right" style="background-image: url(img/profile-photo.jpg)">
+                                <div class="online-status"></div>
+                            </div>
+                            <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
+                        </li>
+                        <li class="message">
+                            <div class="message-image" style="background-image: url(img/profile-photo.jpg)">
+                                <div class="online-status"></div>
+                            </div>
+                            <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
+                        </li>
+                        <li class="message">
+                            <div class="message-image" style="background-image: url(img/profile-photo.jpg)">
+                                <div class="online-status"></div>
+                            </div>
+                            <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
+                        </li>
+                        <li class="message answer">
+                            <div class="message-image float-right" style="background-image: url(img/profile-photo.jpg)">
+                                <div class="online-status"></div>
+                            </div>
+                            <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
+                        </li>
+                        <li class="message">
+                            <div class="message-image" style="background-image: url(img/profile-photo.jpg)">
+                                <div class="online-status"></div>
+                            </div>
+                            <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
+                        </li>
+                    </ul>
+                    
                 </div>
-            </div>
-            <div class="col-md-5">
-                <div class="input-group">
-                    <input type="text" class="search" placeholder="search by keyword or articul...">
-                    <i class="fa fa-search right"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-
-        <!--<div ng-view></div>-->
-
-    
-    <div class="container-fluid margin-padding-0 blue">
-        <div class="row  main-gallery-part margin-padding-0">
-        <div class="gift-card">
-            <img src="img/gift.png" alt="">GIFT CARD
         </div>  
-            <nav class="navbar navbar-default">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="fa fa-bars"></span>&nbsp;SHOP</a>
-                            <ul class="dropdown-menu shop-categories">
-                                <li><a href="#">BATHROOM</a></li>
-                                <li><a href="#">CONSTRUCTION</a></li>
-                                <li><a href="#">KITCHEN</a></li>
-                                <li><a href="#">HARDWARE</a></li>
-                                <li><a href="#">OUTDOOR GARDEN</a></li>
-                                <li><a href="#">PAINT</a></li>
-                                <li><a href="#">BATHROOM</a></li>
-                                <li><a href="#">CONSTRUCTION</a></li>
-                                <li><a href="#">KITCHEN</a></li>
-                                <li><a href="#">HARDWARE</a></li>
-                                <li><a href="#">OUTDOOR GARDEN</a></li>
-                                <li><a href="#">PAINT</a></li>
-                                <div class="categories-item-part">
-                                    <div class="col-md-4 margin-padding-0 item-in-category">
-                                        <div>SHELF</div>
-                                        <div class="item-image" style="background-image: url(img/shelf.jpg)"></div>
-                                    </div>
-                                    <div class="col-md-4 margin-padding-0 item-in-category">
-                                        <div>SHELF</div>
-                                        <div class="item-image" style="background-image: url(img/shelf.jpg)"></div>
-                                    </div>
-                                    <div class="col-md-4 margin-padding-0 item-in-category">
-                                        <div>SHELF</div>
-                                        <div class="item-image" style="background-image: url(img/shelf.jpg)"></div>
-                                    </div>
-                                    <div class="col-md-4 margin-padding-0 item-in-category">
-                                        <div>SHELF</div>
-                                        <div class="item-image" style="background-image: url(img/shelf.jpg)"></div>
-                                    </div>
-                                    <div class="col-md-4 margin-padding-0 item-in-category">
-                                        <div>SHELF</div>
-                                        <div class="item-image" style="background-image: url(img/shelf.jpg)"></div>
-                                    </div>
-                                    <div class="col-md-4 margin-padding-0 item-in-category">
-                                        <div class="see-all-items">see all</div>
-                                    </div>
+        <div class="container-fluid margin-padding-0 gray padding-bottom-10">
+                <div class=" container discounted hidden-sm hidden-xs" ng-if="saleIsOpen" ng-init="saleIsOpen=false">
+                    <div class="col-md-6 margin-padding-0">
+                        <div class="discounted-1">
+                            <div class="discounted-shadow"></div>
+                            <div class="discounted-text1">
+                                <div class="col-md-7 margin-padding-0 discounted-text-left">
+                                    <div class="top-extra-40 line-height-40">MODENA</div>
+                                    <div class="top-title margin-top-0">Italian furniture</div>
+                                    <div class="top-subtitle">Nam dui arcu, lacinia sit amet varius non, posuere non turpis. Pellentesque condimentum condimentum nisi, ut posuere urna auctor</div>
+                                    <div class="top-see-more">see more</div>
                                 </div>
-                                <div class="more-categories">
+                                <div class="col-md-5 discounted-text-right">
+                                    <div class="top-extra-100 line-height-100">25%</div>
+                                    <div class="top-title margin-top-0">SAMMER SALE</div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col-md-6 margin-padding-0">
+                        <div class="discounted-2">
+                            <div class="discounted-shadow"></div>
+                            <div class="discounted-text2">
+                                <div class="col-md-6 margin-padding-0">
+                                    <div class="top-title margin-top-0">MODENA</div>
+                                    <div class="top-subtitle">Italian furniture</div>
+                                    <a href="product-page.html">
+                                        <button class="btn btn-white view">view</button>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 hot-offers">
+                                    <div class="top-extra">5%</div>
+                                    <div class="top-subtitle">HOT OFFERS</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discounted-3">
+                            <div class="discounted-shadow"></div>
+                            <div class="discounted-text2">
+                                <div class="col-md-6 margin-padding-0">
+                                    <div class="top-title margin-top-0">MODENA</div>
+                                    <div class="top-subtitle">Italian furniture</div>
+                                    <button class="btn btn-white view">view</button>
+                                </div>
+                                <div class="col-md-6 hot-offers">
+                                    <div class="top-extra">5%</div>
+                                    <div class="top-subtitle">HOT OFFERS</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container header-part">
+            <div class="row">
+                    <div class="sale-wrapper hidden-sm hidden-xs">
+                        <div class="sale" ng-click="saleIsOpen=!saleIsOpen"><span>SALE</span> <br/>
+                            <span class="glyphicon glyphicon-menu-down" ng-if="!saleIsOpen"></span>
+                            <span class="glyphicon glyphicon-menu-up" ng-if="saleIsOpen"></span>
+                        </div>  
+                    </div>         
+                    <div class="col-md-6 info hidden-sm hidden-xs">
+                        <div class="col-md-6">Tel.:+374 60 00 44, &nbsp; +374 91 44 00 44,</div>
+                        <div class="col-md-6">working hours 09:00-18:00</div>
+                    </div>
+                    <div class="col-md-5 col-md-offset-1 col-xs-6 padding-0">
+                        <div class="col-md-2 col-xs-3 icons activated account" ng-click="accountOpened=!accountOpened">
+                            <span aria-hidden="true" class="icon-account-01"></span>
+                            <div class="icon-text hidden-sm hidden-xs">ACCOUNT</div>  
+                            <div class="account-opened hidden-sm hidden-xs" ng-init="accountOpened=false" ng-if="accountOpened">
+                                <div class="not-loged-in">
+                                    <a href="login.html"><div class="blue">Login to your account</div></a>
+                                    <a href="register.html"><div class="grey margin-top-10">New user? Register here</div></a>
+                                </div>
+                                <div class="loged-in">
                                     <ul>
-                                        <li>More categories</li>
-                                        <li>Material Manufacturing</li>
-                                        <li>Doors</li>
-                                        <li>Door Parts</li>
-                                        <li>Hardware & Tools</li>
-                                        <li>Furniture Accesories</li>
-                                        <li>Connecting accessories</li>
-                                        <li>Edgebands Microwaves</li>
-                                        <li>Door Parts</li>
-                                        <li>Hardware & Tools</li>
-                                        <li>see all</li>
+                                        <li class="welcome">WELCOME<br/>ARAYIK</li>
+                                        <li><a href="personal-information.html">My personal information</a></li>
+                                        <li>My coupon wallet</li>
+                                        <li>My purchase history</li>
+                                        <li class="logout">logout</li>
                                     </ul>
                                 </div>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> OFFERS</a>
-                            <ul class="dropdown-menu shop-categories">
-                                
-                                <div class="offers-item-part">
-                                    <div class="col-md-3 margin-padding-0 an-offer">
-                                        <div class="offer-title">DAYLY DEALS</div>
-                                        <div class="offer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                                        <div class="offer-image" style="background-image: url(img/daily.png)"></div>
-                                        <div class="see-all-offers">see all</div>
-                                    </div>
-                                    <div class="col-md-3 margin-padding-0 an-offer">
-                                        <div class="offer-title">WEEKLY DEALS</div>
-                                        <div class="offer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                                        <div class="offer-image" style="background-image: url(img/percent.png)"></div>
-                                        <div class="see-all-offers">see all</div>
-                                    </div>
-                                    <div class="col-md-3 margin-padding-0 an-offer">
-                                        <div class="offer-title">WEEKLY DEALS</div>
-                                        <div class="offer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                                        <div class="offer-image" style="background-image: url(img/ikea.png)"></div>
-                                        <div class="see-all-offers">see all</div>
-                                    </div>
-                                    <div class="col-md-3 margin-padding-0 an-offer">
-                                        <div class="offer-title">CLEARANCE</div>
-                                        <div class="offer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                                        <div class="offer-image" style="background-image: url(img/ikea.png)"></div>
-                                        <div class="offer-shop">SHOP</div>
-                                    </div>
+                            </div>          
+                        </div>
+                        <div class="col-md-2 icons col-xs-3">
+                            <a href="help.html">
+                                <i class="icon-help-01"></i>
+                                <div class="icon-text hidden-sm hidden-xs">HELP</div> 
+                            </a>
+                        </div>
+                        <div class="col-md-2 icons col-xs-3">
+                            <i class="icon-wishlist_no_wishes-01"></i>
+                            <div class="icon-text hidden-sm hidden-xs">WHISHLIST</div>
+                            <div class="whishlist-circle-o red"><i class="fa fa-dot-circle-o red"></i></div>             
+                        </div>
+                        <div class="col-md-2 icons col-xs-3" ng-click="cartOpened=!cartOpened">
+                            <i class="icon-basket-01"></i>
+                            <div class="icon-text hidden-sm hidden-xs">CART</div>
+                            <div class="account-opened cart-list hidden-sm hidden-xs" ng-init="cartOpened=false" ng-if="cartOpened">
+                                <ul class="home-cart-items">
+                                    <li>
+                                        <div class="col-md-3 cart-item-image"></div>
+                                        <div class="col-md-8 cart-item-text">
+                                            <div class="cart-item-title">DEWALT</div>
+                                            <div>Drill/Driver and Imp- act Driver</div>
+                                            <div class="cart-item-quanity">
+                                                <div class="icon-cart_dropdown_icon-01"></div>
+                                                <span>1</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-md-3 cart-item-image"></div>
+                                        <div class="col-md-8 cart-item-text">
+                                            <div class="cart-item-title">DEWALT</div>
+                                            <div>Drill/Driver and Imp- act Driver</div>
+                                            <div class="cart-item-quanity">
+                                                <div class="icon-cart_dropdown_icon-01"></div>
+                                                <span>1</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-md-3 cart-item-image"></div>
+                                        <div class="col-md-8 cart-item-text">
+                                            <div class="cart-item-title">DEWALT</div>
+                                            <div>Drill/Driver and Imp- act Driver</div>
+                                            <div class="cart-item-quanity">
+                                                <div class="icon-cart_dropdown_icon-01"></div>
+                                                <span>1</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="logout"><a href="information.html">view cart</a></li>
+                                </ul>
+                            </div>
+                            <span class="cart-quanity red">1</span> 
+                        </div>
+                        <div class="col-md-2 lang margin-padding-0 hidden-sm hidden-xs">
+                            <div class="dropdown">
+                                <div class="dropdown-toggle lang-select" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    ARM <br/> <span class="icon-lang_arrow-01"></span>
                                 </div>
-                            </ul>
-                        </li>
-                        <li><a href="#">SERVICES</a></li>     
-                        <li><a href="#">CREDIT</a></li>               
-                    </ul>              
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-            </nav>
-        </div>
-    </div> 
+                                <ul class="dropdown-menu lang-options" aria-labelledby="dropdownMenu2">
+                                    <li><a href="#">ՀԱՅ</a></li>
+                                    <li><a href="#">РУС</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <a href="index.html">
+                            <div class="deco-logo"></div>
+                        </a>                
+                    </div>
+                    <div class="col-md-5">
+                        <div class="input-group store">
+                            <div class="store-opened" ng-if="!storIsOpen">
+                                <div class="store-selected display-none">
+                                    <div class="font-size-20 blue">DECO lorem ipsum dolor sit amet</div>
+                                    <div class="margin-top-10"> <i class="icon-shop_dropdown_phone-01 red font-size-20"></i> &nbsp; +374 91 44 00 44</div>
+                                    <div class="margin-top-10"><i class="icon-shop_dropdown_location-01 red font-size-20"></i> &nbsp; 585 West Hunt Club Rd Nepean, Ontario, K2G 5X6</div>
+                                    <div class="change-store">CHANGE STORE</div>
+                                </div>
+                                <div class="select-store">
+                                    <ul>
+                                        <li>585 West Hunt Club Rd Nepean, Ontario, K2G 5X6</li>
+                                        <li>585 West Hunt Club Rd Nepean, Ontario, K2G 5X6</li>
+                                        <li>585 West Hunt Club Rd Nepean, Ontario, K2G 5X6</li>
+                                        <li>585 West Hunt Club Rd Nepean, Ontario, K2G 5X6</li>
+                                        <li>585 West Hunt Club Rd Nepean, Ontario, K2G 5X6</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <input type="text" class="search" placeholder="MY STORE" ng-click="storIsOpen=!storIsOpen" ng-init="storIsOpen = true">
+                            <i class="fa fa-angle-down in-right"></i>
+                            <i class="fa fa-angle-up in-right display-none"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="input-group">
+                            <input type="text" class="search" placeholder="search by keyword or articul...">
+                            <i class="icon-search-01 in-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        <!--<div ng-view></div>-->
+    
+        <div class="container-fluid margin-padding-0 blue">
+            <div class="row  main-gallery-part margin-padding-0">
+            
+            <nav class="navbar navbar-default">
+                <div class="container position-relative padding-0">
+                    <a href="gift-card.html">
+                        <div class="gift-card hidden-sm hidden-xs">
+                            <img src="img/gift.png" alt="">GIFT CARD
+                        </div>
+                    </a>
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse padding-0" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="icon-hamburger-01"></span>&nbsp;SHOP</a>
+                                <ul class="dropdown-menu shop-categories">
+                                    <li><a href="#">BATHROOM</a></li>
+                                    <li><a href="#">CONSTRUCTION</a></li>
+                                    <li><a href="#">KITCHEN</a></li>
+                                    <li><a href="#">HARDWARE</a></li>
+                                    <li><a href="#">OUTDOOR GARDEN</a></li>
+                                    <li><a href="#">PAINT</a></li>
+                                    <li><a href="#">BATHROOM</a></li>
+                                    <li><a href="#">CONSTRUCTION</a></li>
+                                    <li><a href="#">KITCHEN</a></li>
+                                    <li><a href="#">HARDWARE</a></li>
+                                    <li><a href="#">OUTDOOR GARDEN</a></li>
+                                    <li><a href="#">PAINT</a></li>
+                                    <div class="categories-item-part">
+                                        <a href="product-list.html">
+                                            <div class="col-md-4 margin-padding-0 item-in-category">
+                                                <div>SHELF</div>
+                                                <div class="item-image" style="background-image: url(img/shelf.jpg)"></div>
+                                            </div>
+                                        </a>
+                                        <a href="product-list.html">
+                                            <div class="col-md-4 margin-padding-0 item-in-category">
+                                                <div>SHELF</div>
+                                                <div class="item-image" style="background-image: url(img/shelf.jpg)"></div>
+                                            </div>
+                                        </a>
+                                        <a href="product-list.html">
+                                            <div class="col-md-4 margin-padding-0 item-in-category">
+                                                <div>SHELF</div>
+                                                <div class="item-image" style="background-image: url(img/shelf.jpg)"></div>
+                                            </div>
+                                        </a>
+                                        <<a href="product-list.html">
+                                            <div class="col-md-4 margin-padding-0 item-in-category">
+                                                <div>SHELF</div>
+                                                <div class="item-image" style="background-image: url(img/shelf.jpg)"></div>
+                                            </div>
+                                        </a>
+                                    <a href="product-list.html">
+                                            <div class="col-md-4 margin-padding-0 item-in-category">
+                                                <div>SHELF</div>
+                                                <div class="item-image" style="background-image: url(img/shelf.jpg)"></div>
+                                            </div>
+                                        </a>
+                                        <div class="col-md-4 margin-padding-0 item-in-category">
+                                            <div class="see-all-items">see all</div>
+                                        </div>
+                                    </div>
+                                    <div class="more-categories">
+                                        <ul>
+                                            <li>More categories</li>
+                                            <li>Material Manufacturing</li>
+                                            <li>Doors</li>
+                                            <li>Door Parts</li>
+                                            <li>Hardware & Tools</li>
+                                            <li>Furniture Accesories</li>
+                                            <li>Connecting accessories</li>
+                                            <li>Edgebands Microwaves</li>
+                                            <li>Door Parts</li>
+                                            <li>Hardware & Tools</li>
+                                            <li>see all</li>
+                                        </ul>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> OFFERS</a>
+                                <ul class="dropdown-menu shop-categories">
+                                    
+                                    <div class="offers-item-part">
+                                        <div class="col-md-3 margin-padding-0 an-offer">
+                                            <div class="offer-title">DAYLY DEALS</div>
+                                            <div class="offer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+                                            <div class="offer-image" style="background-image: url(img/daily.png)"></div>
+                                            <div class="see-all-offers">see all</div>
+                                        </div>
+                                        <div class="col-md-3 margin-padding-0 an-offer">
+                                            <div class="offer-title">WEEKLY DEALS</div>
+                                            <div class="offer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+                                            <div class="offer-image" style="background-image: url(img/percent.png)"></div>
+                                            <div class="see-all-offers">see all</div>
+                                        </div>
+                                        <div class="col-md-3 margin-padding-0 an-offer">
+                                            <div class="offer-title">WEEKLY DEALS</div>
+                                            <div class="offer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+                                            <div class="offer-image" style="background-image: url(img/ikea.png)"></div>
+                                            <div class="see-all-offers">see all</div>
+                                        </div>
+                                        <div class="col-md-3 margin-padding-0 an-offer">
+                                            <div class="offer-title">CLEARANCE</div>
+                                            <div class="offer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+                                            <div class="offer-image" style="background-image: url(img/ikea.png)"></div>
+                                            <div class="offer-shop">SHOP</div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES</a>
+                                <ul class="dropdown-menu shop-categories">
+                                    <li><a href="services.html">FLOORING INSTALLATION</a></li>
+                                    <li><a href="services.html">CONSTRUCTION</a></li>
+                                    <li><a href="services.html">KITCHEN</a></li>
+                                    <li><a href="services.html">HARDWARE</a></li>
+                                    <li><a href="services-single.html">KITCHEN</a></li>                                
+                                </ul>
+                            </li>     
+                            <li><a href="#">CREDIT</a></li>               
+                        </ul>              
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            </div>
+        </div>
+    </header> 
+
+    <div class="container padding-0">
         <div class="path">
             <span>Home &nbsp;/</span> <span>&nbsp;Services/&nbsp;</span> <span>&nbsp;Custom-made Furniture</span>
         </div>
-        <div class="services">
+        <div class="services single">
             <div class="page-title">SERVICES</div>
             <div class="services-image" style="background-image: url(img/deco_services.png)"></div>
             <div class="page-subtitle">Custom-made Furniture</div>
