@@ -353,9 +353,9 @@ input[type=checkbox]:checked+div {
 
 .navbar-default .navbar-nav>li>a {
     color: #fff;
-    width: 210px;
+    width: 160px;
     height: 50px;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -387,7 +387,7 @@ input[type=checkbox]:checked+div {
 .gift-card {
     background-color: #135693;
     color:white;
-    font-size: 16px;
+    font-size: 14px;
     position: absolute;
     z-index: 3;
     top: -2px;
@@ -718,7 +718,7 @@ input[type=checkbox]:checked+div {
     width: 260px;
     height: 60px;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border:none;
@@ -737,7 +737,7 @@ input[type=checkbox]:checked+div {
   }
 
 .carousel, .slide, .carousel-inner, .item {
-    height: 770px;
+    height: 600px;
 }
 
 .boxes-shadow {
@@ -757,7 +757,7 @@ input[type=checkbox]:checked+div {
 .boxes-shadow .box {    
     background: #002d57;
     color:white;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     padding: 15px 0;
     border-radius: 5px;
@@ -1276,6 +1276,11 @@ input[type=checkbox]:checked+div {
 
 .store {
     position: relative;
+    font-size: 10px;
+}
+
+.search+.in-right {
+    top: 13px;
 }
 
 .store-opened {
