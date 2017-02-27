@@ -171,7 +171,7 @@ $('.range-slider').jRange({
     to: 250000,
     step: 1000,
     scale: [ ],
-    format: '%s RUB',
+    format: '%s AMD',
     width: '100%',
     showLabels: true,
     isRange : true,

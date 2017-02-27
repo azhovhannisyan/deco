@@ -465,7 +465,7 @@ input[type=checkbox]:checked+div {
 .designer-name {
     position: absolute;
     bottom: 0;
-    font-size: 18px;
+    font-size: 16px;
     display: inline-block;
     padding-left: 15px;
 }
@@ -486,6 +486,7 @@ input[type=checkbox]:checked+div {
     float: left;
     text-decoration: underline;
     cursor: pointer;
+    color: #002d57;
 }
 
 .prev-next {
@@ -853,6 +854,7 @@ input[type=checkbox]:checked+div {
 
 .info {
     font-size: 12px;
+    padding-left: 0;
     font-family: openSansItalic;
     color: #bbbcbf;
 }
@@ -1006,6 +1008,11 @@ input[type=checkbox]:checked+div {
     font-weight: bolder;
 }
 
+.top-extra-22 {
+    font-size: 22px;
+    font-weight: bolder;
+}
+
 .top-extra-24 {
     font-size: 24px;
     font-weight: bolder;
@@ -1057,10 +1064,6 @@ input[type=checkbox]:checked+div {
     text-align: center;
     padding: 0;
     width: 75px;
-}
-
-.cart-icon:before {
-  content: "\e900";
 }
 
 .icons a {
@@ -1416,7 +1419,7 @@ input[type=checkbox]:checked+div {
     text-decoration: none;
     font-weight: bold;
     color: #404041;
-    font-size: 16px;
+    font-size: 14px;
     padding: 0;
 }
 
@@ -1428,15 +1431,14 @@ input[type=checkbox]:checked+div {
 .caption p {
     color: #404041;
     font-family: openSansLight;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 12px;
     padding: 0;
     margin: 0;
 }
 
 .price {
     font-weight: bold;
-    font-size: 26px;
+    font-size: 24px;
     color: #002d57;
 }
 
@@ -1446,7 +1448,7 @@ input[type=checkbox]:checked+div {
 
 .old-price {
     font-weight: bold;
-    font-size: 17px;
+    font-size: 15px;
     text-decoration: line-through;
     color: #404041;
 }
@@ -1587,7 +1589,6 @@ input[type=checkbox]:checked+div {
 
 .results-found {
     color: #afaead;
-    padding-right: 15px;
     margin-bottom: 10px;
     font-family: robotoLight;
     font-size: 14px;
@@ -1605,7 +1606,7 @@ input[type=checkbox]:checked+div {
 }
 
 .filter-part {
-    padding: 20px;
+    padding: 20px 10px;;
     margin-bottom: 15px;
     background: #ede9e6;
 }
@@ -1899,7 +1900,7 @@ input[type=checkbox]:checked+div {
 .product-gallery {
     position: relative;
     background: white;
-    height: 620px;
+    height: 605px;
     padding: 25px 30px;
 }
 .big-circle-o {
@@ -1915,7 +1916,7 @@ input[type=checkbox]:checked+div {
     font-size: 40px;
     position: absolute;
     left: 30px;
-    bottom: 25px;
+    bottom: 20px;
 }
 
 .image-large {
@@ -1941,10 +1942,12 @@ input[type=checkbox]:checked+div {
 }
 
 .small-image {
-    width: 108px;
-    height: 110px;
+    width: 126px;
+    height: 100px;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    margin-right: 5px;
     float: left;
 }
 .multi-item-carousel .item .small-image:last-of-type {
@@ -1955,7 +1958,7 @@ input[type=checkbox]:checked+div {
 }
 
 .small-images .carousel {
-    height: 110px;
+    height: 100px;
 }
 
 #exTab1 .tab-content {
@@ -1968,7 +1971,7 @@ input[type=checkbox]:checked+div {
   border-radius: 0;
   border: none;
   color: #d0d2d3;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bolder;
   padding: 5px 15px;
   border-right: 1px dotted #135693;
@@ -1997,9 +2000,9 @@ input[type=checkbox]:checked+div {
     padding: 10px 0;
 }
 
-.small-images .multi-item-carousel .carousel-inner .item {
+.small-images .multi-item-carousel .carousel-inner, .small-images .multi-item-carousel .carousel-inner .item {
     transition: 500ms ease-in-out left;
-    height: 110px;
+    height: 100px;
     background: none;
     display: block;
     float: left;
@@ -2045,7 +2048,7 @@ input[type=checkbox]:checked+div {
 
 .product-title {
     color: #404041;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     height: 70px;
     padding: 10px 0;
@@ -2179,9 +2182,15 @@ input[type=checkbox]:checked+div {
     color: #858585;
 }
 
+.product-description .red {
+    padding-bottom: 3px;
+    padding-left: 3px;
+}
+
 .product-price {
     font-weight: bold;
-    font-size: 42px;
+    font-size: 40px;
+    line-height: 40px;
     color: #002d57;
     padding-top: 10px;
 }
@@ -2301,10 +2310,6 @@ input[type=checkbox]:checked+div {
     padding: 15px 0;
 }
 
-.joint-purchase .caption {
-    height: 70px;
-}
-
 .joint-purchase .thumbnail {
     padding: 15px;
 }
@@ -2316,7 +2321,7 @@ input[type=checkbox]:checked+div {
 }
 
 .joint-price {
-    padding: 200px 0 202px 30px;
+    padding: 200px 0 202px 29px;
 }
 
 .joint-price .price {
@@ -2426,8 +2431,8 @@ input[type=checkbox]:checked+div {
     color: white;
     text-align: center;
     font-weight: 800;
-    font-size: 24px;
-    margin-bottom: 40px;
+    font-size: 22px;
+    margin-bottom: 35px;
 }
 
 .last-viewed {
@@ -2729,7 +2734,7 @@ footer input:-moz-placeholder {
 }
 
 .services .page-title {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 15px;
     margin-top: 0;
 }
@@ -2749,7 +2754,7 @@ footer input:-moz-placeholder {
 
 
 .services-image {
-    height: 350px;
+    height: 250px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2971,11 +2976,11 @@ footer input:-moz-placeholder {
 }
 
 .login-page {
-    height: 760px;
+    height: 540px;
     width: 100%;
     background: white;
     text-align: center;
-    padding: 260px 420px;
+    padding: 150px 420px;
     margin-bottom: 30px;
 
     /*height: 340px;
@@ -3128,7 +3133,8 @@ footer input:-moz-placeholder {
 }
 
 .article-page .page-subtitle {
-    font-size: 24px;
+    font-size: 22px;
+    margin: 5px 0;
     font-family: openSansLight;
 }
 
@@ -3142,7 +3148,7 @@ footer input:-moz-placeholder {
 }
 
 .article-author, .article-date {
-    font-size: 16px;
+    font-size: 14px;
     color: black;
     font-family: openSansLight;
     display: inline-block;
@@ -3250,12 +3256,12 @@ footer input:-moz-placeholder {
 }
 
 .pagination .next, .pagination .prev {
-    border: 1px solid #8c8c8d;
-    border-radius: 50% !important;
+    padding-top: 6px;
 }
 
-.pagination .next:hover, .pagination .prev:hover {
-    border: 1px solid  #ed3624;
+.pagination .prev span {
+    font-size: 21px;
+
 }
 
 .gift-card-page {
@@ -3339,13 +3345,14 @@ footer input:-moz-placeholder {
 .gift-price {
     color: black;
     font-size: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .buy-card {
     width: 90px;
     border-top: 1px solid #89aac9;
     margin: 0 auto;
+    height: 20px;
 }
 
 .plus-minus {
@@ -3353,8 +3360,12 @@ footer input:-moz-placeholder {
 }
 
 .plus-minus, .cart-icon {
-    display: inline-block;
+    float: left;
     padding: 0 8px;
+}
+
+.cart-icon i {
+    margin-top: -1px;
 }
 
 .gift-bottom {
@@ -3396,7 +3407,7 @@ footer input:-moz-placeholder {
 
 .comparison-buttons {
     text-align: center;
-    height: 519px;
+    height: 508px;
     padding: 140px 10px;
     border-bottom: 10px solid #c9c3c1;
 }
@@ -3492,7 +3503,7 @@ footer input:-moz-placeholder {
     background: #c9c3c1;
     height: 50px;
     color: white;
-    font-size: 14px;
+    font-size: 12px;
     box-sizing: border-box;
 }
 
@@ -3504,6 +3515,7 @@ footer input:-moz-placeholder {
     font-weight: bolder;
     font-size: 12px;
     border: 5px solid #f6f4f2;
+    margin-right: 2px;
     border-radius: 50%;
     color: #f6f4f2;
 }
@@ -3680,7 +3692,7 @@ footer input:-moz-placeholder {
 }
 
 .cart-items i {
-    font-size: 10px;
+    font-size: 14px;
     color: #c9c3c1;
     float: left;
     margin-top: 34px;
@@ -3698,18 +3710,19 @@ footer input:-moz-placeholder {
 .shop-description {
     float: left;
     margin-top: 20px;
+    font-size: 12px;
 }
 
 .shop-title {
     font-weight: bold;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 16x;
+    line-height: 16px;
     vertical-align: middle;
 }
 
 .shop-title .m {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     color: white;
     background-color: #343333;
     border-radius: 50%;
@@ -3717,7 +3730,7 @@ footer input:-moz-placeholder {
     display: inline-block;
     font-size: 10px;
     text-align: center;
-    line-height: 20px;
+    line-height: 16px;
     vertical-align: middle;
     margin-top: -4px;
 }
@@ -3832,7 +3845,7 @@ footer input:-moz-placeholder {
     background: white;
     padding-left: 25px;
     margin-top: 10px;
-    margin-bottom: 85px;
+    margin-bottom: 50px;
 }
  
 .gift-code input::-webkit-input-placeholder {
@@ -3853,6 +3866,7 @@ footer input:-moz-placeholder {
 
 .total-price {
     font-size: 30px;
+    line-height: 30px;
     font-weight: bold;
     color: #ed3624;
     text-align: center;
@@ -3862,10 +3876,15 @@ footer input:-moz-placeholder {
     width: 290px;
     font-size: 14px;
     margin: 20px auto 80px;
+    padding: 5px 0;
 }
 
 .wishlist-icons {
     float: right;
+}
+
+.wishlist-icons .icon-basket-01 {
+    font-size: 17px;
 }
 
 .wishlist-icons div {
