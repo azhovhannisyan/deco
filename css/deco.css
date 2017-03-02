@@ -56,6 +56,10 @@ a {
     text-decoration: none;
 }
 
+textarea {
+    font-size: 12px !important;
+}
+
 .container-fluid {
     margin: 0;
     padding: 0;
@@ -324,9 +328,10 @@ input[type=checkbox]:checked+div {
 .check-title {
     float: left;
     color: #c9c3c1;
-    font-size: 14px;
+    font-size: 12px;
     margin-left: 8px;
     margin-right: 25px;
+    padding-top: 1px;
 }
 .to-top {
     position: absolute;
@@ -1260,6 +1265,7 @@ input[type=checkbox]:checked+div {
     color: #494848;
     padding: 13px 15px;
     box-sizing: border-box;
+    height: 40px;
 }
 
 .input-group {
@@ -1439,6 +1445,7 @@ input[type=checkbox]:checked+div {
 .price {
     font-weight: bold;
     font-size: 24px;
+    line-height: 24px;
     color: #002d57;
 }
 
@@ -1586,17 +1593,16 @@ input[type=checkbox]:checked+div {
     font-weight: bold;
     font-size: 12px;
     color: #002d57;
-    margin-bottom: 15px;
-    margin-top: -10px;
+    margin-top: -5px;
     float: left;
 }
 
 .results-found {
     color: #afaead;
-    margin-bottom: 10px;
     font-family: robotoLight;
     font-size: 14px;
     float: right;
+    margin-bottom: 5px;
 }
 
 .product-button {
@@ -1717,7 +1723,7 @@ input[type=checkbox]:checked+div {
 }
 
 .search-page {
-    padding: 15px 0 0 5px;
+    padding: 0;
 }
 
 .products-list {
@@ -1730,6 +1736,7 @@ input[type=checkbox]:checked+div {
     font-size: 22px;
     text-transform: uppercase;
     padding-left: 5px;
+    margin-bottom: 22px;
 }
 
 .product-right-title {
@@ -1760,6 +1767,7 @@ input[type=checkbox]:checked+div {
 .products-list .col-lg-3 {
     padding-left: 5px;
     padding-right: 0;
+    height: 465px;
 }
 
 .products-list .thumbnail {
@@ -2171,7 +2179,7 @@ input[type=checkbox]:checked+div {
 
 .leave-review-part textarea {
     width: 100%;
-    font-size: 14px;
+    font-size: 12px;
     outline: none;
     border: 1px solid #d0d0d2;
     margin-bottom: 10px;
@@ -2275,7 +2283,7 @@ input[type=checkbox]:checked+div {
 
 .product-to-cart i {
     margin-top: 12px;
-    margin-left: 40px;
+    margin-left: 80px;
 }
 
 .product-to-cart i:before {
@@ -2833,7 +2841,7 @@ footer input:-moz-placeholder {
 .order-form input {
     width: 100%;
     height: 50px;
-    font-size: 14px;
+    font-size: 12px;
     outline: none;
     border: 1px solid #d0d0d2;
     padding-left: 20px;
@@ -2856,7 +2864,7 @@ footer input:-moz-placeholder {
 .order-form .dropdown button, .personal-edit .dropdown button {
     width: 100%;
     height: 50px;
-    font-size: 14px;
+    font-size: 12px;
     outline: none;
     border: 1px solid #d0d0d2;
     padding-left: 20px;
@@ -3168,6 +3176,7 @@ footer input:-moz-placeholder {
 
 .contact-page textarea {
     height: 170px;
+    font-size: 12px;
 }
 
 .stores {
@@ -3431,11 +3440,22 @@ footer input:-moz-placeholder {
 .wishlist-page {
     min-height: 500px;
     padding-bottom: 100px;
-
 }
-/*.wishlist-page .col-lg-3 {
+.wishlist-page .col-lg-3 {
     width: 20% !important;
-}*/
+}
+
+.wishlist-page .col-lg-3 .thumbnail {
+    padding: 10px;
+}
+.wishlist-page .col-lg-3 .product-image {
+    width: 200px;
+    height: 200px;
+} 
+
+.wishlist-page .col-lg-3 .thumbnail .circle-o {
+    right: 15px;
+}
 
 .wishlist-page .line, .comparison-page .line{
     width: 100%;
@@ -3682,7 +3702,7 @@ footer input:-moz-placeholder {
 
 .comfirmation-page {
     color: #343333;
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 200px;
     margin-top: 35px;
 }
@@ -4025,7 +4045,7 @@ footer input:-moz-placeholder {
 .personal-edit input[type=text], .personal-edit input[type=email], .personal-edit input[type=password] {
     width: 100%;
     height: 50px;
-    font-size: 14px;
+    font-size: 12px;
     outline: none;
     border: 1px solid #d0d0d2;
     padding-left: 20px;
@@ -4058,21 +4078,21 @@ footer input:-moz-placeholder {
     width: 100%;
     padding: 15px;
     color: #135693;
-    font-size: 14px;
+    font-size: 12px;
     background: #f6f4f2;
     margin-bottom: 10px;
 }
  .personal-store .question {
      font-weight: bold;
      float: right;
-     margin-top: 2px;
-     font-size: 16px;
+     margin-top: 1px;
+     font-size: 15px;
  }
 .edit-title {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     color: #002d57;
     font-family: robotoMedium;
-    font-size: 14px;
+    font-size: 12px;
 }
 @media all and (transform-3d), (-webkit-transform-3d) {
       > .item{
