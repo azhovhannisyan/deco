@@ -343,7 +343,7 @@ input[type=checkbox]:checked+div {
     color: #9bb0c4;
     line-height: 50px;
     font-size: 50px;
-    z-index: 102;
+    z-index: 90;
 
 }
 
@@ -556,7 +556,13 @@ input[type=checkbox]:checked+div {
     transition: right 1ms;
 }
 
+.typing {
+    height: auto;
+}
 
+.typing input {
+    height: 100%;
+}
 
 .chat-opened {
     width: 250px;
@@ -570,7 +576,7 @@ input[type=checkbox]:checked+div {
     width: 250px;
     bottom: 0;
     right: 0;
-    height: 35px;
+    height: 40px;
     color: #f6f4f2;
     background: #3e3d3d;
     z-index: 100;
@@ -578,7 +584,7 @@ input[type=checkbox]:checked+div {
 
 .type-here div {
     width: 35px;
-    height: 35px;
+    height: 40px;
     padding-top: 10px;
     text-align: center;
     background: #343333;
@@ -587,35 +593,51 @@ input[type=checkbox]:checked+div {
     font-size: 18px;
 }
 
-.type-here input {
+.type-here td {
+    height: 100%;
+}
+
+.type-here textarea {
     background: transparent;
+    height: 100%;
     float: left;
     outline: none;
     padding-left: 7px; 
-    height: 35px;
-    line-height: 35px;
+    line-height: 12px;
+    font-size: 10px !important;
     vertical-align: middle;
     border: none;
     width: 180px;
+    resize: both;
+    scrollbar-face-color: #ff8c00;
+    scrollbar-track-color: #fff8dc;
+    scrollbar-arrow-color: #ffffff;
+    scrollbar-highlight-color: #fff8dc;
+    scrollbar-shadow-color: #d2691e;
+    scrollbar-3dlight-color: #ffebcd;
+    scrollbar-darkshadow-color: #8b0000;
 }
 
-.type-here input::-webkit-input-placeholder {
+.type-here textarea::-webkit-input-placeholder {
      font-family: robotoLightItalic;
      font-size: 10px;
      font-style: italic;
      color: #f6f4f2;
+     padding-top: 10px;
 }
-.type-here input::-moz-placeholder { 
+.type-here textarea::-moz-placeholder { 
   font-family: robotoLightItalic;
   font-size: 10px;
   font-style: italic;
   color: #f6f4f2;
+  padding-top: 10px;
 }
-.type-here input:-ms-input-placeholder { 
+.type-here textarea:-ms-input-placeholder { 
   font-family: robotoLightItalic;
   font-size: 10px;
   font-style: italic;
   color: #f6f4f2;
+  padding-top: 10px;
 }
 
 .messages {
@@ -713,8 +735,8 @@ input[type=checkbox]:checked+div {
 
 #rotate{
     position: absolute;
-    right: 138px;
-    bottom: 88px;
+    right: 129px;
+    bottom: 99px;
   transform: rotate(7deg);
   -ms-transform: rotate(270deg); /* IE 9 */
   -moz-transform: rotate(270deg); /* Firefox */
@@ -723,7 +745,7 @@ input[type=checkbox]:checked+div {
 
   .consulting {
     width: 260px;
-    height: 60px;
+    height: 40px;
     color: white;
     font-size: 16px;
     border-top-right-radius: 10px;
@@ -739,7 +761,7 @@ input[type=checkbox]:checked+div {
       color: white;
       z-index: 101;
       padding: 5px;
-      top: -41px;
+      top: -31px;
       left: 265px;
   }
 
@@ -751,7 +773,7 @@ input[type=checkbox]:checked+div {
     position: absolute;
     z-index: 5;
     bottom: 190px;
-    right: 0;
+    right: 45px;
     height: auto;  
     overflow: hidden;
 }
@@ -763,6 +785,7 @@ input[type=checkbox]:checked+div {
 
 .boxes-shadow .box {    
     background: #002d57;
+    width: 120px;
     color:white;
     font-size: 14px;
     text-align: center;
@@ -1069,9 +1092,17 @@ input[type=checkbox]:checked+div {
     width: 75px;
 }
 
+.icons:hover {
+    color: #002d57;
+}
+
 .icons a {
     text-decoration: none;
     color: #c9c3c1;
+}
+
+.icons a:hover {
+    color: #002d57;
 }
 
 .account {
@@ -1204,10 +1235,6 @@ input[type=checkbox]:checked+div {
     text-align: center;
 }
 
-.activated {
-    color: #002d57;
-}
-
 .icon-text {
     font-size: 12px;
     font-family: openSans !important;
@@ -1239,6 +1266,7 @@ input[type=checkbox]:checked+div {
     border-top: none;
     border-radius: 0;
     background: #f6f4f1;
+    font-size: 12px;
 }
 
 .lang-options li a {
@@ -1300,9 +1328,9 @@ input[type=checkbox]:checked+div {
     background: white;
     border: 2px solid #b8b9bc;
     border-top: none;
-    top: 46px;
+    top: 37px;
     left: 0;
-    z-index: 2;
+    z-index: 6;
     box-sizing: border-box;
     line-height: 20px;
     overflow: hidden;
@@ -1470,6 +1498,9 @@ input[type=checkbox]:checked+div {
 
 .quanity {
     width: 66px;
+    height: 32px;
+    float: left;
+    padding: 6px 10px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     background: #f4f4f4;
@@ -1479,13 +1510,13 @@ input[type=checkbox]:checked+div {
     background: #d0d2d3;
 }
 .quanity div {
-    width: 21px;
+    width: 15px;
     background: #f4f4f4;
-    height: 32px;
-    padding: 6px 0;
+    height: 20px;
     float: left;
     text-align: center;
     color: #969393;
+    font-size: 14px;
     font-family: openSansLight;
     font-weight: normal;
 }
@@ -1496,7 +1527,7 @@ input[type=checkbox]:checked+div {
 }
 
 .add-to-cart {
-    background: #135693;
+    background: #002D57;
     padding: 0 8px;
     color: white;
     font-family: robotoLight;
@@ -1507,6 +1538,10 @@ input[type=checkbox]:checked+div {
     text-align: center;
     cursor: pointer;
     float: left;
+}
+
+.add-to-cart:hover {
+    background: #135693;
 }
 
 .view-details a{
@@ -1622,7 +1657,7 @@ input[type=checkbox]:checked+div {
 }
 
 .search-page .filter-part {
-    padding: 20px 10px;
+    padding: 0 10px 20px;
 }
 
 .product-category {
@@ -1707,9 +1742,14 @@ input[type=checkbox]:checked+div {
     font-size: 14px;
 }
 
+.search-page .dropdown.product-list .dropdown-menu {
+    width: 100%;
+    top: 90%;
+}
+
 .dropdown.product-list .dropdown-menu {
     width: 100%;
-    top: 100%;
+    top: 70%;
 }
 
 .ad-banner {
@@ -1727,7 +1767,7 @@ input[type=checkbox]:checked+div {
 }
 
 .products-list {
-    padding: 5px 0 0 5px;
+    padding: 20px 0 0 5px;
 }
 
 .product-list-title {
@@ -2127,18 +2167,18 @@ input[type=checkbox]:checked+div {
     left: 50%;
 }
 .specifications .vertical-line {
-    height: 360px;
+    height: 330px;
     top: 10px;
     left: 50%;
 }
 
 .specifications .vertical-line.line-2 {
-    height: 120px;
+    height: 110px;
     top: 4px;
 }
 
 .specifications .vertical-line.line-3 {
-    height: 200px;
+    height: 175px;
     top: 168px;
 }
 
@@ -2166,7 +2206,7 @@ input[type=checkbox]:checked+div {
 .review-stars {
     float: right;
     text-align: right;
-    padding: 35px 0;
+    padding: 35px 120px 35px 0;
 }
 
 .review-stars .ratings {
@@ -2220,8 +2260,8 @@ input[type=checkbox]:checked+div {
 
 .product-description ul li div, .specifications ul li div {
     border-bottom: 1px dotted #a2a4a6;
-    width: 48%;
-    margin-right: 2%;
+    width: 47%;
+    margin-right: 3%;
     float: left;
     box-sizing: border-box;
     height: 100%;
@@ -2229,7 +2269,7 @@ input[type=checkbox]:checked+div {
     color: #383333;
 }
 .product-description ul li div:last-of-type, .specifications ul li div:last-of-type {
-    margin-left: 2%;
+    margin-left: 3%;
     margin-right: 0;
     float: right;
     color: #858585;
@@ -2374,14 +2414,14 @@ input[type=checkbox]:checked+div {
 }
 
 .joint-price {
-    padding: 200px 0 202px 29px;
+    padding: 200px 0 175px 26px;
 }
 
 .joint-price .price {
     margin-bottom: 10px;
 }
 
-.joint-price .quanity div {
+.joint-price .quanity, .joint-price .quanity div {
     background: white;
 }
 
@@ -2477,15 +2517,15 @@ input[type=checkbox]:checked+div {
 }
 
 .buy-with {
-    margin: 45px auto;
+    margin: 20px auto;
 }
 
 .buy-with-title {
     color: white;
     text-align: center;
     font-weight: 800;
-    font-size: 22px;
-    margin-bottom: 35px;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .last-viewed {
@@ -2602,7 +2642,7 @@ input[type=checkbox]:checked+div {
     height: 230px;
     text-align: center;
     margin-right: 10px;
-    padding: 85px 60px;
+    padding: 80px 60px;
     font-size: 25px;
     font-weight: bold;
 }
@@ -2826,7 +2866,7 @@ footer input:-moz-placeholder {
     font-size: 13px;
     font-family: openSansLight;
     color: #2f2f30;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     height: auto;
 }
 
@@ -2881,7 +2921,7 @@ footer input:-moz-placeholder {
 }
 
 .order-form.register-page {
-    min-height: 750px; 
+    min-height: 660px; 
 }
 .order-form .dropdown button, .order-form .dropdown button:hover, .order-form.r .dropdown button:focus, .order-form .open>.dropdown-toggle.btn-default:hover, .order-form .open>.dropdown-toggle.btn-default {
     color: #c9c3c1;
@@ -2932,7 +2972,7 @@ footer input:-moz-placeholder {
 
 .order-form .dropdown .dropdown-menu, .personal-edit .dropdown .dropdown-menu{
     width: 100%;
-    top: 64%;
+    top: 45px;
 }
 
 .order-form #message {
@@ -3029,12 +3069,12 @@ footer input:-moz-placeholder {
 }
 
 .login-page {
-    height: 540px;
+    height: 340px;
     width: 100%;
     background: white;
     text-align: center;
-    padding: 150px 420px;
-    margin-bottom: 30px;
+    padding: 50px 420px;
+    margin-bottom: 44;/;.px;
 
     /*height: 340px;
     width: 100%;
@@ -3068,6 +3108,11 @@ footer input:-moz-placeholder {
     width: 49%;
 }
 
+.information-page .dropdown .dropdown-menu, .personal-edit .dropdown .dropdown-menu {
+    width: 100%;
+    top: 90%;
+}
+
 .not-signed-in .red {
     float: right;
     font-weight: bold;
@@ -3075,7 +3120,7 @@ footer input:-moz-placeholder {
 }
 
 .information-page {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     margin-top: 5px;
 }
 
@@ -3135,7 +3180,7 @@ footer input:-moz-placeholder {
     color: white;
     width: 290px;
     background: #002d57;
-    margin: 25px auto;
+    margin: 0 auto;
     text-align: center;
     padding: 16px 0;
 }
@@ -3163,7 +3208,7 @@ footer input:-moz-placeholder {
 .contact-page {
     min-height: 390px;
     text-align: left;
-    padding: 30px 40px;
+    padding: 30px 40px 50px 40px;
 }
 
 .contact-page .login-title {
@@ -3188,7 +3233,7 @@ footer input:-moz-placeholder {
 
 .article-page .page-subtitle {
     font-size: 22px;
-    margin: 5px 0;
+    margin: 5px 0 0;
     font-family: openSansLight;
 }
 
@@ -3439,7 +3484,7 @@ footer input:-moz-placeholder {
 
 .wishlist-page {
     min-height: 500px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 .wishlist-page .col-lg-3 {
     width: 20% !important;
@@ -3447,6 +3492,7 @@ footer input:-moz-placeholder {
 
 .wishlist-page .col-lg-3 .thumbnail {
     padding: 10px;
+    margin-bottom: 10px;
 }
 .wishlist-page .col-lg-3 .product-image {
     width: 200px;
@@ -3472,7 +3518,7 @@ footer input:-moz-placeholder {
 
 .comparison-buttons {
     text-align: center;
-    height: 508px;
+    height: 498px;
     padding: 140px 10px;
     border-bottom: 10px solid #c9c3c1;
 }
@@ -3594,8 +3640,12 @@ footer input:-moz-placeholder {
 .login-choice, .my-order {
     padding: 30px 40px;
     background: white;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     color: #c9c3c1;
+}
+
+.login-choice:last-of-type {
+    margin-bottom: 30px;
 }
 
 .my-order {
@@ -3605,6 +3655,7 @@ footer input:-moz-placeholder {
 
 .my-order .purchase-subtitle {
     margin-top: 0;
+    padding-left: 10px;
 }
 
 .my-order ul {
@@ -3635,9 +3686,7 @@ footer input:-moz-placeholder {
 
 .my-order .purchase-quanity {
     font-weight: bold;
-    width: 10%;
-    text-align: right;
-    padding-right: 2px;
+    width: 7%;    
 }
 
 .my-order .purchase-price {
@@ -3653,7 +3702,7 @@ footer input:-moz-placeholder {
 }
 
 .choose-method {
-    margin-top: 5px;
+    margin-top: 10px;
     padding-bottom: 30px;
 }
 
@@ -3697,13 +3746,13 @@ footer input:-moz-placeholder {
     margin-bottom: 30px;
 }
 .payment-page.my-order {
-    padding-bottom: 168px;
+    padding-bottom: 173px;
 }
 
 .comfirmation-page {
     color: #343333;
     font-size: 12px;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     margin-top: 35px;
 }
 
@@ -3721,8 +3770,8 @@ footer input:-moz-placeholder {
 .bill-to {
     padding: 20px 30px;
     background-color: white;
-    margin-top: 5px;
-    border-right: 5px solid #f6f4f2;
+    margin-top: 10px;
+    border-right: 10px solid #f6f4f2;
 } 
 
 .bill-to:last-of-type {
@@ -3823,7 +3872,7 @@ footer input:-moz-placeholder {
     padding-left: 0;
     padding-right: 25px;
     margin-top: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .cart-footer:last-of-type {
@@ -3910,7 +3959,7 @@ footer input:-moz-placeholder {
     background: white;
     padding-left: 25px;
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
  
 .gift-code input::-webkit-input-placeholder {
@@ -3940,7 +3989,7 @@ footer input:-moz-placeholder {
 .total-price .cart-button {
     width: 290px;
     font-size: 14px;
-    margin: 20px auto 80px;
+    margin: 20px auto 50px;
     padding: 5px 0;
 }
 
@@ -3969,7 +4018,7 @@ footer input:-moz-placeholder {
 
 .personal-page {
     min-height: 400px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .personal-page .wrapper {
@@ -3984,7 +4033,7 @@ footer input:-moz-placeholder {
     padding: 0;
 }
 .personal-page  .content-wrapper {
-    padding-left: 255px;
+    padding-left: 250px;
 }
 .personal-page .sidebar-nav {
     list-style:none;
@@ -4040,6 +4089,10 @@ footer input:-moz-placeholder {
     min-height: 755px;
     background: white;
     padding: 15px;
+}
+
+.personal-edited .row {
+    margin: 0;
 }
 
 .personal-edit input[type=text], .personal-edit input[type=email], .personal-edit input[type=password] {
@@ -4354,6 +4407,22 @@ footer input:-moz-placeholder {
         width: 50vw;
     }
 
+    .mobile-chat-button {
+        position: absolute;
+        right: 260px;
+        bottom: 100px;
+        z-index: 100;
+        width: 60px;
+        height: 60px;
+        padding: 11px 15px;
+        color: white;
+        font-size: 30px;
+        border-radius: 50%;
+        border:none;
+        background: #343333;
+
+        }
+
     .mobile-version .header-part {
         width: 100%;
         height: 65px;
@@ -4435,8 +4504,11 @@ footer input:-moz-placeholder {
     color: white
     }
 
-    .search+.in-right {
+    .store .search+.in-right {
         color: white;
+    }
+    .search+.in-right {
+        top: 11px;
     }
 
     .large-carousel .carousel, .large-carousel .slide, .large-carousel .carousel-inner, .large-carousel .item {
@@ -4445,11 +4517,24 @@ footer input:-moz-placeholder {
 
     .large-carousel .carousel-indicators {
         display: block;
+        bottom: -40px;
     }
+
+    .large-carousel .carousel-indicators .active {
+        margin: 0;
+        background-color: #002d57;
+    }
+
+    .large-carousel .carousel-indicators li {
+        border: 1px solid #002D57;
+        background: transparent;
+    }
+
 
     .boxes {
         padding: 10px 0;
         text-align: center;
+        margin-top: 28px;
     }
 
     .box {    
@@ -4462,6 +4547,47 @@ footer input:-moz-placeholder {
         margin: 0 1%;
         width: 31%;
         box-sizing: border-box;
+    }
+
+    .mobile-version .carousel-shadow {
+        width: 270px;
+        height: 130px;
+        bottom: 140px;
+        padding: 15px;
+    }
+
+    .mobile-version .carousel-shadow .top-title {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .mobile-version .carousel-shadow .top-extra-90 {
+        font-size: 55px;
+        line-height: 55px;
+    }
+
+     .mobile-version .carousel-shadow .subtitle {
+        font-size: 11px;
+        line-height: 11px;
+        margin-top: 25px;
+        float: right;
+    }
+
+    .mobile-version .carousel-shadow .top-extra-40 {
+        font-size: 20px;
+        line-height: 20px;
+        float: right;
+    }
+
+    .mobile-version .carousel-shadow .add-to {
+        font-size: 11px;
+        line-height: 12px;
+        float: right;
+        margin-top: 28px;
+    }
+
+    .mobile-version .carousel-shadow .view {
+        margin-top: 9px;
     }
     
 
