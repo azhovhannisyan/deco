@@ -609,13 +609,6 @@ input[type=checkbox]:checked+div {
     border: none;
     width: 180px;
     resize: both;
-    scrollbar-face-color: #ff8c00;
-    scrollbar-track-color: #fff8dc;
-    scrollbar-arrow-color: #ffffff;
-    scrollbar-highlight-color: #fff8dc;
-    scrollbar-shadow-color: #d2691e;
-    scrollbar-3dlight-color: #ffebcd;
-    scrollbar-darkshadow-color: #8b0000;
 }
 
 .type-here textarea::-webkit-input-placeholder {
@@ -638,6 +631,23 @@ input[type=checkbox]:checked+div {
   font-style: italic;
   color: #f6f4f2;
   padding-top: 10px;
+}
+
+.typing::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 0;
+        background-color: #f6f4f2;;
+}
+
+.typing::-webkit-scrollbar {
+        width: 8px;
+        background-color: #f6f4f2;;
+}
+
+.typing::-webkit-scrollbar-thumb {
+	border-radius: 0;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #343333;
 }
 
 .messages {
@@ -4403,8 +4413,15 @@ footer input:-moz-placeholder {
         margin-top: 65px;
     }
 
-    .col-xs-6 {
-        width: 50vw;
+    .logo-part {
+        width: 135px;
+        float: left;
+    }
+
+    .icons-part {
+        width: 195px;
+        float: right;
+        padding-left: 10px;
     }
 
     .mobile-chat-button {
@@ -4451,7 +4468,7 @@ footer input:-moz-placeholder {
     }
 
     .mobile-version .icons {
-        width: 25%;
+        width: 45px;
         font-size: 30px;
     }
 
@@ -4589,6 +4606,111 @@ footer input:-moz-placeholder {
     .mobile-version .carousel-shadow .view {
         margin-top: 9px;
     }
+
+    .mobile-version .menu-part {
+        padding: 30px 15px 15px;
+    }
+
+    .mobile-version .menu-part ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .mobile-version .menu-part ul li {
+        width: 100%;
+        height: 55px;
+        background: white;
+        color: #002d57;
+        font-size: 16px;
+        padding: 17px 20px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        text-transform: uppercase;
+    }
+
+    .mobile-version .menu-part ul li .icon-arrow_right-02 {
+        font-size: 20px;
+    }
+
+    footer {
+        padding-bottom: 0;
+    }
+
+    .mobile-footer-text {
+        font-family: openSansLight;
+        font-size: 14px;
+        color: #6b6b6b;
+        padding-bottom: 15px;
+    }
+
+    .mobile-footer-title {
+        color: #343333;
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+    .mobile-footer-info {
+        color: #002d57;
+        font-size: 16px;
+        font-weight: bold;
+        padding-left: 5px;
+    }
+
+    .mobile-footer-info:last-of-type {
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
+
+    .mobile-version .card {
+        float: left;
+        margin-right: 0;
+        margin-left: 3px;
+        width: 69px;
+    }
+
+    .mobile-version .join {
+        width: 70px;
+    }
+
+    .footer-options {
+        margin: 10px auto;
+        padding: 0;
+        list-style: none;
+    }
+
+    .footer-options li {
+        display: inline-block;
+        border-right: 1px solid #a6a6a6;      
+        text-transform: uppercase;
+    }
+
+    .footer-options li:last-of-type {
+        border: none;
+    }
+
+    .footer-options li a {
+        text-decoration: none;
+        color: #6b6b6b;  height: 16px;
+        padding: 4px;
+        font-size: 12px;
+        font-family: openSansLight;
+    }
+
+    .copyright {
+        color: #6b6b6b;
+        font-family: openSansLight;
+    }
+
+    .footer-horizontal-line {
+        width: 100%;
+        border-bottom: 4px solid #cdcecf;
+    }
+
+    
     
 
 }
