@@ -43,11 +43,16 @@
                     <span class="circle glyphicon glyphicon-chevron-down" ng-click="chatOpen=!chatOpen"></span>
                 </div> 
                 <div class="chat-opened">
-                    <div class="type-here">
-                        <div class="fa fa-paperclip"></div>
-                        <input type="textarea" cols="10" placeholder="type here...">
-                        <div class="fa fa-paper-plane"></div>
-                    </div>
+                    <table class="type-here">
+                        <tr>
+                            <td><div class="fa fa-paperclip"></div></td>
+                        <td>
+                            <textarea  class="typing" cols="10" placeholder="type here..."></textarea>
+                        </td>
+                        <td><div class="fa fa-paper-plane"></div></td>
+                        </tr>
+                        
+                    </table>
                     <ul class="messages">
                         <li class="message">
                             <div class="message-image" style="background-image: url(img/profile-photo.jpg)">
@@ -353,9 +358,11 @@
                                                 <div class="item-image" style="background-image: url(img/shelf.jpg)"></div>
                                             </div>
                                         </a>
-                                        <div class="col-lg-4 margin-padding-0 item-in-category">
-                                            <div class="see-all-items">see all</div>
-                                        </div>
+                                        <a href="product-list.html">
+                                            <div class="col-lg-4 margin-padding-0 item-in-category">
+                                                <div class="see-all-items">see all</div>
+                                            </div>
+                                        </a>
                                     </div>
                                     <div class="more-categories">
                                         <ul>

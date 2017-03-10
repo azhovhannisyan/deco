@@ -38,57 +38,62 @@
 
     <header>
         <div class="chat" ng-class="{right0: chatOpen}" ng-init="chatOpen=false">
-            <div id="rotate">
-                    <button class="consulting">ONLINE CONSULTING </button>
-                    <span class="circle glyphicon glyphicon-chevron-down" ng-click="chatOpen=!chatOpen"></span>
-                </div> 
-                <div class="chat-opened">
-                    <div class="type-here">
-                        <div class="fa fa-paperclip"></div>
-                        <input type="textarea" cols="10" placeholder="type here...">
-                        <div class="fa fa-paper-plane"></div>
-                    </div>
-                    <ul class="messages">
-                        <li class="message">
-                            <div class="message-image" style="background-image: url(img/profile-photo.jpg)">
-                                <div class="online-status"></div>
-                            </div>
-                            <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
-                        </li>
-                        <li class="message answer">
-                            <div class="message-image float-right" style="background-image: url(img/profile-photo.jpg)">
-                                <div class="online-status"></div>
-                            </div>
-                            <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
-                        </li>
-                        <li class="message">
-                            <div class="message-image" style="background-image: url(img/profile-photo.jpg)">
-                                <div class="online-status"></div>
-                            </div>
-                            <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
-                        </li>
-                        <li class="message">
-                            <div class="message-image" style="background-image: url(img/profile-photo.jpg)">
-                                <div class="online-status"></div>
-                            </div>
-                            <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
-                        </li>
-                        <li class="message answer">
-                            <div class="message-image float-right" style="background-image: url(img/profile-photo.jpg)">
-                                <div class="online-status"></div>
-                            </div>
-                            <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
-                        </li>
-                        <li class="message">
-                            <div class="message-image" style="background-image: url(img/profile-photo.jpg)">
-                                <div class="online-status"></div>
-                            </div>
-                            <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
-                        </li>
-                    </ul>
+        <div id="rotate">
+                <button class="consulting">ONLINE CONSULTING </button>
+                <span class="circle glyphicon glyphicon-chevron-down" ng-click="chatOpen=!chatOpen"></span>
+            </div> 
+            <div class="chat-opened">
+                <table class="type-here">
+                    <tr>
+                        <td><div class="fa fa-paperclip"></div></td>
+                    <td>
+                        <textarea  class="typing" cols="10" placeholder="type here..."></textarea>
+                    </td>
+                    <td><div class="fa fa-paper-plane"></div></td>
+                    </tr>
                     
-                </div>
-        </div>  
+                </table>
+                <ul class="messages">
+                    <li class="message">
+                        <div class="message-image" style="background-image: url(img/profile-photo.jpg)">
+                            <div class="online-status"></div>
+                        </div>
+                        <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
+                    </li>
+                    <li class="message answer">
+                        <div class="message-image float-right" style="background-image: url(img/profile-photo.jpg)">
+                            <div class="online-status"></div>
+                        </div>
+                        <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
+                    </li>
+                    <li class="message">
+                        <div class="message-image" style="background-image: url(img/profile-photo.jpg)">
+                            <div class="online-status"></div>
+                        </div>
+                        <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
+                    </li>
+                    <li class="message">
+                        <div class="message-image" style="background-image: url(img/profile-photo.jpg)">
+                            <div class="online-status"></div>
+                        </div>
+                        <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
+                    </li>
+                    <li class="message answer">
+                        <div class="message-image float-right" style="background-image: url(img/profile-photo.jpg)">
+                            <div class="online-status"></div>
+                        </div>
+                        <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
+                    </li>
+                    <li class="message">
+                        <div class="message-image" style="background-image: url(img/profile-photo.jpg)">
+                            <div class="online-status"></div>
+                        </div>
+                        <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
+                    </li>
+                </ul>
+                
+            </div>
+    </div>  
         <div class="container-fluid margin-padding-0 gray padding-bottom-10"  ng-if="saleIsOpen" ng-init="saleIsOpen=false">
                 <div class=" container discounted hidden-sm hidden-xs">
                     <div class="col-lg-6 margin-padding-0">
@@ -353,9 +358,11 @@
                                                 <div class="item-image" style="background-image: url(img/shelf.jpg)"></div>
                                             </div>
                                         </a>
-                                        <div class="col-lg-4 margin-padding-0 item-in-category">
-                                            <div class="see-all-items">see all</div>
-                                        </div>
+                                        <a href="product-list.html">
+                                            <div class="col-lg-4 margin-padding-0 item-in-category">
+                                                <div class="see-all-items">see all</div>
+                                            </div>
+                                        </a>
                                     </div>
                                     <div class="more-categories">
                                         <ul>
