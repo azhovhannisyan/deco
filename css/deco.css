@@ -1506,7 +1506,6 @@ input[type=checkbox]:checked+div {
     font-size: 12px;
     color: #969393;
     margin-top: -3px;
-    margin-bottom: 5px;
 }
 
 .quanity {
@@ -3559,7 +3558,7 @@ footer input:-moz-placeholder {
 
 .comparison-buttons {
     text-align: center;
-    height: 458px;
+    height: 453px;
     padding: 140px 10px;
     border-bottom: 10px solid #c9c3c1;
     width: 245px;
