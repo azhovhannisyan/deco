@@ -5346,6 +5346,64 @@ footer input:-moz-placeholder {
         min-height: 520px;
     }
 
+    .shop-mobile-description {
+        float: left;
+        width: calc(100% - 85px);
+        padding: 0;
+        border-bottom: 1px solid #c9c3c1;
+    }
+
+    .shop-image {
+        margin: 0;
+    }
+
+    .shop-quanity {
+        margin: 15px auto;
+    }
+
+    .shop-price {
+        text-align: left;
+        padding: 0;
+    }
+
+    .shop-title.blue {
+        text-align: center;
+    }
+
+    .cart-footer {
+        padding: 10px;
+        margin-bottom: 0;
+    }
+
+    .cart-footer-text {
+        padding: 10px;
+    }
+
+    .cart-footer-stores {
+        padding: 10px;
+    }
+
+    .cart-footer-stores div{
+        padding-bottom: 10px;
+    }
+
+    .cart-items li {
+        height: 145px;
+        padding: 10px;
+    }
+
+    .cart-items i {
+        position: absolute;
+        font-size: 20px;
+        right: 0;
+        top: 0;
+        margin-top: 0;
+    }
+
+    .gift-code img {
+        margin-left: calc(50% - 90px);
+}
+
     
 
     
