@@ -108,6 +108,10 @@ textarea {
     margin-top: 20px;
 }
 
+.margin-top-25 {
+    margin-top: 25px;
+}
+
 .margin-right-all {
     margin-right: 50%;
 }
@@ -3192,7 +3196,7 @@ footer input:-moz-placeholder {
 
 .signin-part .order-form {
     padding: 30px;
-    min-height: 600px;
+    min-height: 980px;
 }
 
 .signin-part .dropdown button, .signin-part .dropdown button:hover, .signin-part .dropdown button:focus, .signin-part .open>.dropdown-toggle.btn-default:hover, .signin-part .open>.dropdown-toggle.btn-default {
@@ -4864,6 +4868,22 @@ footer input:-moz-placeholder {
 
     .many-articles-page {
         padding-bottom: 0;
+        padding-top: 10px;
+    }
+
+    .articles {
+        border-radius: 0;
+    }
+
+    .similar-articles {
+        font-weight: bold;
+        background: white;
+        color: #135693;
+        text-align: center;
+        height: 50px;
+        font-size: 16px;
+        padding: 15px 0;
+        margin-bottom: 20px;
     }
 
     .discounted-1 {
@@ -4973,7 +4993,7 @@ footer input:-moz-placeholder {
         border-radius: 0;
     }
 
-    .panel-body .register {
+    .panel-body .register, .login-page .register {
         width: 130px;
         height: 35px;
         background: #ed3624;
@@ -5056,6 +5076,274 @@ footer input:-moz-placeholder {
     .services.single {
         padding-bottom: 0;
         border-bottom: none;
+    }
+
+    .faq-topic-list {
+        margin-left: 0;
+    }
+
+    .faq-topic-list li {
+        margin-bottom: 10px;
+    }
+
+    .panel-default {        
+        border-bottom: 5px solid white;
+    }
+
+    .faq-page .panel-title {
+        background: #f6f4f2;
+        color: #002d57;
+        font-size: 14px;
+    }
+
+    .faq-number {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: #135693;
+        color: white;
+        font-size: 9px;
+        font-weight: bolder;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 16px;
+        margin-right: 10px;
+    }
+
+    .list-title {
+        float: left;
+        width: calc(100% - 30px);
+    }
+
+    .list-style {
+        display: block;
+        float: left;
+    }
+
+    .faq-topic {
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .faq-answer {
+        padding: 10px 0 10px 30p
+    }
+
+    .login-register-page {
+        padding: 0;
+        background: white;
+    }
+
+    .login-page {
+        padding: 40px 10px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .order-form.register-page {
+        min-height: 0;
+    }
+
+    .order-form.register-page .checkbox {
+        display: block;
+        float: left;
+    }
+
+    .checkbox-label {
+        display: block;
+        float: left;
+        width: calc(100% - 30px);
+    }
+
+    .order-form.register-page .dropdown button {
+        margin-bottom: 10px;
+    }
+
+    .login-register-page input, .login-register-page .panel .btn-default {
+        text-align: left;
+        padding-left: 20px;
+        border-radius: 0;
+        height: 40px;
+    }
+
+     .login-register-page input[type=checkbox] {
+         height: 15px;
+     }
+
+    .login-register-page input::-webkit-input-placeholder {
+        font-size: 12px;
+        font-style: italic;
+        color: #c1bebd;
+    }
+    .login-register-page input::-moz-placeholder { 
+        font-size: 12px;
+        font-style: italic;
+        color: #c1bebd;
+    }
+    .login-register-page input::-ms-input-placeholder { 
+        font-size: 12px;
+        font-style: italic;
+        color: #c1bebd;
+    }
+
+    .login-register-page .panel-body {
+        background: white;
+    }
+
+    .forgot-password {
+        font-size: 12px;
+    }
+
+    .login-middle {
+        font-size: 12px;
+        color: #343333;
+        text-align: center;
+        background: #f6f4f2;
+        padding: 30px;
+    }
+
+    .middle-title {
+        font-size: 14px;
+        font-weight: 800;
+        color: #002d57;
+        text-align: center;
+    }
+
+    .login-middle ul {
+        color: #c9c3c1;
+        text-align: left;
+        margin-top: 15px;
+        list-style: disc;
+    }
+
+    .login-middle ul  li {
+        height: 20px;
+    }
+
+    .account-page .menu-part ul li {
+        text-transform: none;
+        height: 50px;
+        padding: 14px 20px;
+    }
+
+    .account-page .menu-part ul li:first-of-type {
+        font-size: 24px;
+        text-align: center;
+        height: 100px;
+        padding: 18px 0;
+    }
+
+    .comfirmation-page {
+        margin: 0;
+        padding: 0;
+    }
+
+    .comfirmation-page .thank-you {
+        padding: 10px;
+    }
+
+    .bill-to {
+        background: transparent;
+        border-bottom: 5px solid white;
+        padding: 20px;
+        margin: 0;
+        border-right: none;
+        color: #6d6d6d;
+    }
+
+    .bill-to div:first-of-type {
+        color: #231f20;
+    }
+
+    .purchase-button {
+        border-right: none;
+        padding: 10px 30px;
+    }
+
+    .purchase-button i {
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .signin-part .order-form {
+        padding: 30px 0;
+        min-height: 875px;
+    }
+
+    .order-form input, .order-form .dropdown button {
+        height: 40px;
+    }
+
+    .order-form input[type=checkbox] {
+        height: 19px;
+    }
+
+    .order-form .inputs span, .signin-part .dropdown .red {
+        top: 17px;
+    }
+
+    .signin-part .checkbox {
+        margin-bottom: 0;
+    }
+
+    .my-order {
+        padding: 25px 15px;
+        background: transparent;
+        border-left: none;
+        border-bottom: 10px solid white;
+        margin-bottom: 0;
+    }
+
+    .information-page {
+        margin-bottom: 0;
+    }
+
+    .information-part {
+        padding: 5px 10px;
+        min-height: 380px;
+    }
+
+    .add-person {
+        margin-bottom: 10px;
+    }
+
+    .add-person i {
+        float: left;
+        padding-right: 5px;
+        padding-top: 4px;
+    }
+
+    .login-choice {
+        padding: 20px;
+    }
+    
+    .login-choice input {
+        width: 100%;
+        height: 40px;
+    }
+
+    .login-choice input[type=checkbox] {
+        height: 17px;
+    }
+
+    .login-choice .forgot-password {
+        width: 100%;
+    }
+
+    .login-choice .red {
+        float: none;
+        font-weight: bolder;
+    }
+
+    .purchase-process {
+        background: white;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 14px;
+    }
+
+    .payment-page .information-part {
+        min-height: 520px;
     }
 
     
