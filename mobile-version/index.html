@@ -39,15 +39,20 @@
     <div class="mobile-version">
         <header>
             <div class="chat" ng-class="{right0: chatOpen}" ng-init="chatOpen=false">
-                    <div class="mobile-chat-button" ng-click="chatOpen=!chatOpen">
+                    <div class="mobile-chat-button" ng-click="chatOpen=!chatOpen" ng-class="{chatopened: chatOpen}">
                         <i class="icon-help-01"></i>
                     </div>
                     <div class="chat-opened">
-                        <div class="type-here">
-                            <div class="fa fa-paperclip"></div>
-                            <input type="textarea" cols="10" placeholder="type here...">
-                            <div class="fa fa-paper-plane"></div>
-                        </div>
+                         <table class="type-here">
+                            <tr>
+                                <td><div class="fa fa-paperclip"></div></td>
+                            <td>
+                                <textarea  class="typing" cols="10" placeholder="type here..."></textarea>
+                            </td>
+                            <td><div class="fa fa-paper-plane float-right"></div></td>
+                            </tr>
+                            
+                        </table>
                         <ul class="messages">
                             <li class="message">
                                 <div class="message-image" style="background-image: url(../img/profile-photo.jpg)">
