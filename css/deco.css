@@ -4482,7 +4482,7 @@ footer input:-moz-placeholder {
         clear: both;
     }
 
-    .home-page, .menu-page, .menu-open-page, .cart-page, .mobile-personal-page {
+    .home-page, .menu-page, .menu-open-page, .cart-page, .mobile-personal-page, .mobile-wishlist-page {
         margin-top: 65px;
         padding: 0;
     }
@@ -5468,6 +5468,92 @@ footer input:-moz-placeholder {
 
     .edit-info .fa-pencil {
         font-size: 40px;
+    }
+
+    .thumbnail.mobile-thumbnail {
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        width: 100%;
+        padding: 30px 20px 20px;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+
+    .thumbnail.mobile-thumbnail .product-image {
+        float: left;
+        width: 90px;
+        height: 90px;
+        margin-right: 10px;
+    }
+
+    .thumbnail.mobile-thumbnail .item-status {
+        height: 20px;
+        width: 45px;
+        font-size: 9px;
+        padding-top: 3px;
+        left: 20px;
+        border-radius: 0 0 45px 45px;
+        -moz-border-radius: 0 0 45px 45px;
+        -webkit-border-radius: 0 0 45px 45px;
+    }
+
+    .thumbnail.mobile-thumbnail .circle-o {
+        position: absolute;
+        top: -7px;
+        right: 0;
+        color: #d0d2d3;
+        font-size: 22px;
+    }
+
+    .thumbnail.mobile-thumbnail .circle-o:hover {
+        color: #002d57;
+    }
+
+    .thumbnail.mobile-thumbnail .caption {
+        font-size: 12px;
+        margin-top: 5px;
+        height: 40px
+    }
+
+    .thumbnail.mobile-thumbnail .price {
+        font-size: 18px;
+    }
+
+    .thumbnail.mobile-thumbnail .ratings {
+        float: left;
+        padding: 0;
+    }
+
+    .next-item {
+        position: absolute;
+        right: 10px;
+        top: calc(50% - 20px);
+        color: #002d57;
+        font-size: 20px;
+    }
+
+    .chat {
+        position: static;
+        z-index: 1;
+    }
+
+    .type-here {
+        width: 100%;
+        position: fixed;
+    }
+
+    .messages {
+        height: auto;
+    }
+
+    .type-here .fa-paper-plane {
+        float: right;
+    }
+
+    .message-text {
+        width: calc(100% - 70px);
     }
 
 
