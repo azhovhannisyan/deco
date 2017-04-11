@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Deco</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Font Awesome -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/deco-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/deco.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-app="decoApp">
+    <div class="mobile-version">
+        <header>
+            <div class="chat" ng-class="{right0: chatOpen}" ng-init="chatOpen=false">
+                    <div class="mobile-chat-button" ng-click="chatOpen=!chatOpen">
+                        <i class="icon-help-01"></i>
+                    </div>
+                    <div class="chat-opened">
+                        <div class="type-here">
+                            <div class="fa fa-paperclip"></div>
+                            <input type="textarea" cols="10" placeholder="type here...">
+                            <div class="fa fa-paper-plane"></div>
+                        </div>
+                        <ul class="messages">
+                            <li class="message">
+                                <div class="message-image" style="background-image: url(../img/profile-photo.jpg)">
+                                    <div class="online-status"></div>
+                                </div>
+                                <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
+                            </li>
+                            <li class="message answer">
+                                <div class="message-image float-right" style="background-image: url(../img/profile-photo.jpg)">
+                                    <div class="online-status"></div>
+                                </div>
+                                <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
+                            </li>
+                            <li class="message">
+                                <div class="message-image" style="background-image: url(../img/profile-photo.jpg)">
+                                    <div class="online-status"></div>
+                                </div>
+                                <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
+                            </li>
+                            <li class="message">
+                                <div class="message-image" style="background-image: url(../img/profile-photo.jpg)">
+                                    <div class="online-status"></div>
+                                </div>
+                                <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
+                            </li>
+                            <li class="message answer">
+                                <div class="message-image float-right" style="background-image: url(../img/profile-photo.jpg)">
+                                    <div class="online-status"></div>
+                                </div>
+                                <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
+                            </li>
+                            <li class="message">
+                                <div class="message-image" style="background-image: url(../img/profile-photo.jpg)">
+                                    <div class="online-status"></div>
+                                </div>
+                                <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
+                            </li>
+                        </ul>
+                        
+                    </div>
+            </div>
+
+            <div class="container header-part">
+                <div class="col-xs-6 col-md-6 padding-0 logo-part">
+                    <a href="menu.html">
+                        <div class="mobile-menu">
+                            <i class="icon-hamburger-01"></i>
+                        </div>
+                    </a>
+                    <a href="index.html">
+                        <div class="deco-logo"></div>
+                    </a>                
+                </div>
+                <div class="col-xs-6 col-md-6 padding-0 icons-part">
+                    <div class="col-xs-3 col-md-3 icons activated account" ng-click="accountOpened=!accountOpened">
+                        <span aria-hidden="true" class="icon-account-01"></span>          
+                    </div>
+                    <div class="icons col-xs-3 col-md-3">
+                        <a href="help.html">
+                            <i class="icon-help-01"></i>
+                        </a>
+                    </div>
+                    <div class="icons col-xs-3 col-md-3">
+                        <i class="icon-wishlist_no_wishes-01"></i>
+                        <div class="whishlist-circle-o red"><i class="fa fa-dot-circle-o red"></i></div>             
+                    </div>
+                    <a href="cart.html">
+                        <div class="icons col-xs-3 col-md-3" ng-click="cartOpened=!cartOpened">
+                            <i class="icon-basket-01"></i>
+                            <span class="cart-quanity red">1</span> 
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid home-page">
+            <div class="container-fluid padding-0">
+                <div class="col-xs-12 col-md-12 padding-0">
+                    <div class="input-group">
+                        <input type="text" class="search">
+                        <i class="icon-search-01 in-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container comparision-page">
+            <div class="col-xs-12 padding-0 comparison-buttons">
+                <div class="comparision-title">PRODUCT COMPARISION</div>
+                <div>Showing products 2/2</div>
+                <button>ВСЕ ПАРАМЕТРЫ</button>
+                <button>ПОКАЗАТЬ РЕЗУЛЬТАТЫ</button>
+             </div>
+             <div class="col-xs-12 col-md-12 padding-0">
+                 <div class="compared-products">            
+                    <div class="all-products">
+                        <div class="col-xs-6 col-md-4">
+                            <div class="thumbnail">
+                                <div class="circle-o"><i class="icon-delete_from_list_icon-01"></i></div>
+                                <div class="product-image" style="background-image: url(../img/2.jpg)"></div>                                   
+                                <div class="caption">
+                                    <h4><a href="#">DEWALT</a>
+                                    </h4>
+                                    <p>Drill/Driver and Impact Driver Combo Kit - Cordless - 20 V</p>
+                                </div>  
+                                <div class="price">16 000 AMD</div>                                       
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <div class="thumbnail">
+                                <div class="circle-o"><i class="icon-delete_from_list_icon-01"></i></div>
+                                <div class="product-image" style="background-image: url(../img/2.jpg)"></div>                                   
+                                <div class="caption">
+                                    <h4><a href="#">DEWALT</a>
+                                    </h4>
+                                    <p>Drill/Driver and Impact Driver Combo Kit - Cordless - 20 V</p>
+                                </div>  
+                                <div class="price">16 000 AMD</div>                                       
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-4 padding-left-right-5">
+                            <div class="thumbnail">
+                                <div class="circle-o"><i class="icon-delete_from_list_icon-01"></i></div>
+                                <div class="product-image" style="background-image: url(../img/2.jpg)"></div>                                   
+                                <div class="caption">
+                                    <h4><a href="#">DEWALT</a>
+                                    </h4>
+                                    <p>Drill/Driver and Impact Driver Combo Kit - Cordless - 20 V</p>
+                                </div>  
+                                <div class="price">16 000 AMD</div>                                       
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+             </div>
+             <div class="col-xs-12 padding-0">
+                 <div class="compared-products background-gray">
+                    <div class="all-products">                
+                        <div class="col-xs-6">
+                            <div class="compare-by">Монтажный размер</div>
+                            <div class="compare-status">1DIN</div>
+                            <div class="compare-by">Монтажный размер</div>
+                            <div class="compare-status">CD/MP3-магнитола </div>
+                            <div class="compare-by">Монтажный размер</div>
+                            <div class="compare-status">CD, CD-R, CD-RW</div>
+                            <div class="compare-by">Монтажный размер</div>
+                            <div class="compare-status"></div>
+                            <div class="compare-by">Монтажный размер</div>
+                            <div class="compare-status">1DIN</div>
+                            <div class="compare-by">Монтажный размер</div>
+                            <div class="compare-status">CD/MP3-магнитола</div>
+                            <div class="compare-by">Монтажный размер</div>
+                            <div class="compare-status"><i class="fa fa-times red"></i></div>
+                            <div class="compare-by">Монтажный размер</div>
+                            <div class="compare-status">CD, CD-R, CD-RW</div>
+                            <div class="compare-by">Монтажный размер</div>
+                            <div class="compare-status"><i class="fa fa-check green"></i></div>
+                            <div class="compare-by">Монтажный размер</div>
+                            <div class="compare-status">1DIN</div>
+                            <div class="compare-by">Монтажный размер</div>
+                            <div class="compare-status"><i class="fa fa-check green"></i></div>
+                            <div class="compare-by">Монтажный размер</div>
+                            <div class="compare-status">1DIN</div>
+                            <div class="compare-by">Монтажный размер</div>
+                            <div class="compare-status">CD/MP3-магнитола</div>
+                            <div class="compare-by">Монтажный размер</div>
+                            <div class="compare-status"><i class="fa fa-times red"></i></div>
+                            <div class="compare-by">Монтажный размер</div>
+                            <div class="compare-status">CD, CD-R, CD-RW</div>
+                            <div class="compare-by">Монтажный размер</div>
+                            <div class="compare-status"><i class="fa fa-check green"></i></div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="compare-by"> </div>
+                            <div class="compare-status">1DIN</div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status">CD/MP3-магнитола </div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status">CD, CD-R, CD-RW</div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status"></div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status">1DIN</div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status">CD/MP3-магнитола</div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status"><i class="fa fa-times red"></i></div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status">CD, CD-R, CD-RW</div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status"><i class="fa fa-check green"></i></div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status">1DIN</div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status"><i class="fa fa-check green"></i></div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status">1DIN</div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status">CD/MP3-магнитола</div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status"><i class="fa fa-times red"></i></div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status">CD, CD-R, CD-RW</div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status"><i class="fa fa-check green"></i></div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="compare-by"> </div>
+                            <div class="compare-status">1DIN</div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status">CD/MP3-магнитола </div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status">CD, CD-R, CD-RW</div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status"></div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status">1DIN</div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status">CD/MP3-магнитола</div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status"><i class="fa fa-times red"></i></div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status">CD, CD-R, CD-RW</div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status"><i class="fa fa-check green"></i></div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status">1DIN</div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status"><i class="fa fa-check green"></i></div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status">1DIN</div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status">CD/MP3-магнитола</div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status"><i class="fa fa-times red"></i></div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status">CD, CD-R, CD-RW</div>
+                            <div class="compare-by"> </div>
+                            <div class="compare-status"><i class="fa fa-check green"></i></div>
+                        </div>                    
+                    </div>
+                </div>
+             </div>
+
+             <div class="col-xs-12 comparision-footer">
+                 <div class="col-xs-4">
+                     <div class="icon-print-01"></div>
+                     <div>PRINT THE PAGE</div>
+                 </div>
+                 <div class="col-xs-4">
+                     <div class="icon-basket-01"></div>
+                     <div>ADD ALL TO CART</div>
+                 </div>
+                 <div class="col-xs-4">
+                     <div class="icon-clear_comparison-01"></div>
+                     <div>CLEAR COMPARISION</div>
+                 </div>
+             </div>
+        </div>
+        
+
+        <footer>
+            <div class="container padding-0">
+                <div class="col-xs-12 col-md-8">
+                    <div class="footer-title">GET UPDATES</div>
+                    <div class="padding-bottom-10">Join 211,004 individuals who already have a head start.</div>
+                    <div class="input-group">
+                        <input type="text" placeholder="your mail here...">
+                        <button class="join">JOIN</button>
+                    </div>
+                    <div class="footer-title">PAYYMENT OPTIONS</div>
+                    <div class="row margin-padding-0">
+                        <div class="col-md-3 col-xs-3 card visa"></div>
+                        <div class="col-md-3 col-xs-3 card master"></div> 
+                        <div class="col-md-3 col-xs-3 card arca"></div> 
+                        <div class="col-md-3 col-xs-3 card idram"></div>
+                                             
+                     </div>
+                </div>               
+            </div> 
+            <div class="container-fluid text-center background-white">
+                <div class="row">
+                    <ul class="footer-options">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Credit</a></li>
+                        <li><a href="#">Desktop site</a></li>
+                        <li><a href="#">Arm</a></li>
+                        <li><a href="#">rus</a></li>
+                        <li><a href="#">eng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-horizontal-line"></div>
+                 <div class="row">
+                    <div class="col-xs-12 col-md-12 copyright">
+                        <p>&copy; Deco 2016, All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+                
+    </div>
+
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+    
+    <script src="../js/deco.js"></script>     
+
+     <!--Angular JS-->
+      <script src="../js/angular.min.js"></script>
+      <script src="../js/angular-route.min.js"></script>
+     <script src="../js/app.js"></script>
+     <script src="../js/header-fonts.js"></script>
+</body>
+
+</html>

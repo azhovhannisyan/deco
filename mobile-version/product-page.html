@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Deco</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Font Awesome -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/deco-icons.css" rel="stylesheet">
+    <link href="../css/jquery.range.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/deco.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-app="decoApp">
+    <div class="mobile-version">
+        <div class="review-layer" ng-if="reviewOpen" ng-init="reviewOpen=false">
+            <div class="review-shadow"></div>
+            <div class="submit-review">
+                <div class="close-zoom fa fa-times" ng-click="reviewOpen=!reviewOpen"></div>
+                <div class="submit-image-part">
+                    <img src="../img/3.jpg" alt="">
+                    <div class="bold">DEWALT</div>
+                    <div>Drill/Driver and Impact Driver Combo Kit - Cordless - 20 V</div>
+                </div>
+                <div class="review-right">
+                    <div class="container order-form">
+                        <div class="page-subtitle">MY REVIEW</div>
+                        <div class="col-xs-12 to-rate-part">
+                            <div class="to-rate">Click to rate</div>
+                            <div class="ratings">
+                                <p>
+                                    <span class="icon-product_star-01 red"></span>
+                                    <span class="icon-product_star-01 red"></span>
+                                    <span class="icon-product_star-01 red"></span>
+                                    <span class="icon-product_star-01"></span>
+                                    <span class="icon-product_star-01"></span>
+                                </p>
+                            </div>                        
+                        </div>
+                        <div class="col-xs-12 inputs">
+                            <textarea name="message" id="message" cols="30" rows="8" placeholder="type review text here..."></textarea>
+                        </div>
+                        <div class="col-xs-12 inputs">
+                            <input type="text" placeholder="type your name here...">
+                        </div>
+                        <div class="col-xs-12  inputs">
+                            <input type="text" placeholder="type your email here...">
+                        </div>                       
+                        <div class="submit">SUBMIT REVIEW</div>
+                    </div> 
+
+                </div>
+            </div>
+        </div>
+        <header>
+            <div class="chat" ng-class="{right0: chatOpen}" ng-init="chatOpen=false">
+                    <div class="mobile-chat-button" ng-click="chatOpen=!chatOpen">
+                        <i class="icon-help-01"></i>
+                    </div>
+                    <div class="chat-opened">
+                        <div class="type-here">
+                            <div class="fa fa-paperclip"></div>
+                            <input type="textarea" cols="10" placeholder="type here...">
+                            <div class="fa fa-paper-plane"></div>
+                        </div>
+                        <ul class="messages">
+                            <li class="message">
+                                <div class="message-image" style="background-image: url(../img/profile-photo.jpg)">
+                                    <div class="online-status"></div>
+                                </div>
+                                <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
+                            </li>
+                            <li class="message answer">
+                                <div class="message-image float-right" style="background-image: url(../img/profile-photo.jpg)">
+                                    <div class="online-status"></div>
+                                </div>
+                                <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
+                            </li>
+                            <li class="message">
+                                <div class="message-image" style="background-image: url(../img/profile-photo.jpg)">
+                                    <div class="online-status"></div>
+                                </div>
+                                <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
+                            </li>
+                            <li class="message">
+                                <div class="message-image" style="background-image: url(../img/profile-photo.jpg)">
+                                    <div class="online-status"></div>
+                                </div>
+                                <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
+                            </li>
+                            <li class="message answer">
+                                <div class="message-image float-right" style="background-image: url(../img/profile-photo.jpg)">
+                                    <div class="online-status"></div>
+                                </div>
+                                <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
+                            </li>
+                            <li class="message">
+                                <div class="message-image" style="background-image: url(../img/profile-photo.jpg)">
+                                    <div class="online-status"></div>
+                                </div>
+                                <div class="message-text">Hi! I am Julia, the PR Manager. What can I help you with?</div>
+                            </li>
+                        </ul>
+                        
+                    </div>
+            </div>
+
+            <div class="container header-part background-gray">
+                <div class="col-xs-6 col-md-6 padding-0 logo-part">
+                    <a href="menu.html">
+                        <div class="mobile-menu">
+                            <i class="icon-hamburger-01"></i>
+                        </div>
+                    </a>
+                    <a href="index.html">
+                        <div class="deco-logo"></div>
+                    </a>                
+                </div>
+                <div class="col-xs-6 col-md-6 padding-0 icons-part">
+                    <div class="col-xs-3 col-md-3 icons activated account" ng-click="accountOpened=!accountOpened">
+                        <span aria-hidden="true" class="icon-account-01"></span>          
+                    </div>
+                    <div class="icons col-xs-3 col-md-3">
+                        <a href="help.html">
+                            <i class="icon-help-01"></i>
+                        </a>
+                    </div>
+                    <div class="icons col-xs-3 col-md-3">
+                        <i class="icon-wishlist_no_wishes-01 blue"></i>
+                        <div class="whishlist-circle-o red"><i class="fa fa-dot-circle-o red"></i></div>             
+                    </div>
+                    <a href="cart.html">
+                        <div class="icons col-xs-3 col-md-3" ng-click="cartOpened=!cartOpened">
+                            <i class="icon-basket-01"></i>
+                            <span class="cart-quanity red">1</span> 
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="container mobile-product-page">
+           <div class="mobile-page-title">Home | Departments | Doors and Windows</div>
+           <div class="col-xs-12 padding-0 company">
+                <img src="../img/company-logo.png" alt="">
+                Full list of products by Aray
+                <span class="icon-share-01 float-right"></span>                
+           </div>
+           <div class="col-xs-12 padding-0">
+                <div class="col-xs-12 margin-padding-0 product-gallery">
+                        <div class="image-large" style="background-image: url(../img/product-image.jpg)"></div>
+                        <div class="ratings">
+                            <p>
+                                <span class="icon-product_star-01 red"></span>
+                                <span class="icon-product_star-01 red"></span>
+                                <span class="icon-product_star-01 red"></span>
+                                <span class="icon-product_star-01"></span>
+                                <span class="icon-product_star-01"></span>
+                            </p>
+                            <p ng-click="reviewOpen=true">write a review</p>
+                        </div>
+                        <div class="zoom-icon" ng-click="zoomOpened=true">
+                            <i class="icon-zoom-01"></i>
+                        </div>
+                </div>
+                <div class="col-xs-12 margin-padding-0 small-images">
+                    <div class="carousel slide multi-item-carousel" data-type="multi5" data-interval="3000" id="theCarousel">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="small-image" style="background-image: url(../img/product-image.jpg)"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="small-image" style="background-image: url(../img/product-image.jpg)"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="small-image" style="background-image: url(../img/product-image.jpg)"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="small-image" style="background-image: url(../img/product-image.jpg)"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="small-image" style="background-image: url(../img/product-image.jpg)"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="small-image" style="background-image: url(../img/product-image.jpg)"></div>
+                                </div> 
+                                <!-- add  more items here -->
+                        </div>
+                        <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="icon-arrow_left-01"></i></a>
+                        <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="icon-arrow_right-01"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="product-title">DEWALT Drill/Driver and Impact Driver Combo Kit Cordless - 20 V</div>
+                <div class="product-price">16 000AMD</div>
+                <div class="red padding-bottom-10">бесплатная доставка</div>
+                <div class="col-xs-12 margin-padding-0 padding-bottom-10">
+                    <div class="product-quanity">
+                        <span>-</span>
+                        <span>1</span>
+                        <span>+</span>
+                    </div>
+                    <div class="product-to-cart">
+                        <i class="icon-add_to_basket-01"></i>
+                        <span>добавить в карзину</span>
+                    </div>
+                </div>
+                <div class="col-xs-12 margin-padding-0">
+                    <div class="padding-bottom-10">включить в заказ?</div>
+                    <div class="col-xs-12 margin-padding-0 include-option">
+                        <div class="checkbox">
+                            <input type="checkbox" value="mont"/>
+                            <div class="checkbox-outer"><i class="fa fa-square"></i></div>
+                            <div class="checkbox-shadow"></div>                            
+                        </div> 
+                        <label for="mont">монтаж - итого 2.000 AMD</label>
+                    </div>
+                    <div class="col-xs-12 margin-padding-0 include-option">
+                        <div class="checkbox">
+                            <input type="checkbox" value="mont"/>
+                            <div class="checkbox-outer"><i class="fa fa-square"></i></div>
+                            <div class="checkbox-shadow"></div>                            
+                        </div> 
+                        <label for="mont">монтаж - итого 3.000 AMD</label>
+                    </div>
+                    <div class="col-xs-12 margin-padding-0 include-option">
+                        <div class="checkbox">
+                            <input type="checkbox" value="mont"/>
+                            <div class="checkbox-outer"><i class="fa fa-square"></i></div>
+                            <div class="checkbox-shadow"></div>                            
+                        </div> 
+                        <label for="mont">монтаж - итого 4.000 AMD</label>
+                    </div>
+                    <div class="col-xs-12 margin-padding-0 include-option">
+                        <div class="checkbox">
+                            <input type="checkbox" value="mont"/>
+                            <div class="checkbox-outer"><i class="fa fa-square"></i></div>
+                            <div class="checkbox-shadow"></div>                            
+                        </div> 
+                        <label for="mont">монтаж - итого 2.000 AMD</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 margin-padding-0 product-options">
+                <div class="col-xs-4 position-relative">
+                    <!--<div class="delivery-shadow"><img src="../img/close-icon.png" class="close-icon-image"/></div>-->
+                    <div class="option-image"><i class="icon-delivery-01"></i></div>
+                    <div class="vertical-line"></div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="option-image"><i class="icon-k_sravneniyu-01"></i></div>
+                    <div class="vertical-line"></div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="option-image"><i class="icon-deco_circle_for_products-01"></i></div>
+                </div>
+            </div>
+
+            <div class="product-specifications">
+                <div class="container product-tabs">
+                    <div id="exTab1" class="container">	
+                        <ul  class="nav nav-pills">
+                            <li class="active">
+                                <a  href="#1a" data-toggle="tab">описание</a>
+                            </li>
+                            <li><a href="#2a" data-toggle="tab">специфики продукта</a>
+                            </li>
+                            <li><a href="#3a" data-toggle="tab">ПОЛЕЗНОЕ</a>
+                            </li>
+                                <li><a href="#4a" data-toggle="tab">ОТЗЫВЫ</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content clearfix">
+                            <div class="tab-pane active padding-15" id="1a">
+                                <div class="product-name">Drill/Driver and Impact Driver Combo Kit - Cordless - 20 V</div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae sodales mauris, sed mattis urna. Quisque sollicitudin vehicula ullamcorper. In scelerisque nulla neque, quis volutpat mauris ornare dapibus. Praesent in tincidunt massa. Nunc nec mattis nisi. Maecenas id enim nec diam blandit pulvinar. Sed sollicitudin finibus dui sed fringilla. 
+                            </div>
+                            </div>
+                            <div class="tab-pane" id="2a">
+                                <ul class="mobile-specifications">
+                                    <li>
+                                        <div class="col-xs-6 blue">Type</div>
+                                        <div class="col-xs-6">Collection</div>
+                                    </li>
+                                     <li>
+                                        <div class="col-xs-6 blue">Type</div>
+                                        <div class="col-xs-6">Collection</div>
+                                    </li>
+                                     <li>
+                                        <div class="col-xs-6 blue">Type</div>
+                                        <div class="col-xs-6">Collection</div>
+                                    </li>
+                                     <li>
+                                        <div class="col-xs-6 blue">Type</div>
+                                        <div class="col-xs-6">Collection</div>
+                                    </li>
+                                     <li>
+                                        <div class="col-xs-6 blue">Type</div>
+                                        <div class="col-xs-6">Collection</div>
+                                    </li>
+                                     <li>
+                                        <div class="col-xs-6 blue">Type</div>
+                                        <div class="col-xs-6">Collection</div>
+                                    </li>
+                                     <li>
+                                        <div class="col-xs-6 blue">Type</div>
+                                        <div class="col-xs-6">Collection</div>
+                                    </li>
+                                     <li>
+                                        <div class="col-xs-6 blue">Type</div>
+                                        <div class="col-xs-6">Collection</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane padding-15" id="3a">
+                                <div class="product-name">Drill/Driver and Impact Driver Combo Kit - Cordless - 20 V</div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae sodales mauris, sed mattis urna. Quisque sollicitudin vehicula ullamcorper. In scelerisque nulla neque, quis volutpat mauris ornare dapibus. Praesent in tincidunt massa. Nunc nec mattis nisi. Maecenas id enim nec diam blandit pulvinar. Sed sollicitudin finibus dui sed fringilla.  Nam dui arcu, lacinia sit amet varius non, posuere non turpis. Pellentesque condimentum condimentum nisi, ut aposuere urna auctor ac. Suspendisse elementum ultricies auctor. Etiam malesuada porttitor libero, vel bibendum augue ultrices ut. Aliquam ornare sit amet nunc fringilla ornare. Suspendisse vulputate cursus lacus. Fusce pulvinar pulvinar ultricies. Praesent convallis, velit vel efficitur feugiat, diam nunc accumsan metus, sit amet ultrices erat elit eu ipsum.
+                                </div>
+                            </div>
+                            <div class="tab-pane padding-15" id="4a">
+                                <ul class="reviews">
+                                    <li class="row">
+                                        <div class="col-xs-1 reviewer-avatar"><i class="icon-account-01"></i></div>
+                                        <div class=" col-xs-11 product-review">
+                                            <div class="col-xs-6 review-stars">
+                                                <div class="ratings">
+                                                    <p>
+                                                        <span class="icon-product_star-01 red"></span>
+                                                        <span class="icon-product_star-01 red"></span>
+                                                        <span class="icon-product_star-01"></span>
+                                                        <span class="icon-product_star-01"></span>
+                                                        <span class="icon-product_star-01"></span>
+                                                    </p>
+                                                </div>
+                                                <div>comment</div>
+                                            </div>
+                                            <div class="review-title">27.02.17</div>
+                                            <div class="review-title">Jane Simonyan</div>
+                                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu maximus nisi, sed aliquam turpis. Phasellus molestie in lacus non efficitur. Quisque nulla purus, pharetra vitae laoreet vel, feugiat eget erat. Donec eleifend elit id velit feugiat blandit. Quisque finibus elit eget aliquet ornare. Quisque sodales libero quis feugiat pulvinar. Ut diam ante, venenatis nec pulvinar a, sodales ac sapien. Etiam tincidunt rhoncus justo non finibus.
+                                            </div>
+                                        </div>                                        
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-xs-1 reviewer-avatar"><i class="icon-account-01"></i></div>
+                                        <div class=" col-xs-11 product-review">
+                                            <div class="col-xs-6 review-stars">
+                                                <div class="ratings">
+                                                    <p>
+                                                        <span class="icon-product_star-01 red"></span>
+                                                        <span class="icon-product_star-01 red"></span>
+                                                        <span class="icon-product_star-01"></span>
+                                                        <span class="icon-product_star-01"></span>
+                                                        <span class="icon-product_star-01"></span>
+                                                    </p>
+                                                </div>
+                                                <div>comment</div>
+                                            </div>
+                                            <div class="review-title">27.02.17</div>
+                                            <div class="review-title">Jane Simonyan</div>
+                                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu maximus nisi, sed aliquam turpis. Phasellus molestie in lacus non efficitur. Quisque nulla purus, pharetra vitae laoreet vel, feugiat eget erat. Donec eleifend elit id velit feugiat blandit. Quisque finibus elit eget aliquet ornare. Quisque sodales libero quis feugiat pulvinar. Ut diam ante, venenatis nec pulvinar a, sodales ac sapien. Etiam tincidunt rhoncus justo non finibus.
+                                            </div>
+                                        </div>                                        
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-xs-1 reviewer-avatar"><i class="icon-account-01"></i></div>
+                                        <div class=" col-xs-11 product-review">
+                                            <div class="col-xs-6 review-stars">
+                                                <div class="ratings">
+                                                    <p>
+                                                        <span class="icon-product_star-01 red"></span>
+                                                        <span class="icon-product_star-01 red"></span>
+                                                        <span class="icon-product_star-01"></span>
+                                                        <span class="icon-product_star-01"></span>
+                                                        <span class="icon-product_star-01"></span>
+                                                    </p>
+                                                </div>
+                                                <div>comment</div>
+                                            </div>
+                                            <div class="review-title">27.02.17</div>
+                                            <div class="review-title">Jane Simonyan</div>
+                                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu maximus nisi, sed aliquam turpis. Phasellus molestie in lacus non efficitur. Quisque nulla purus, pharetra vitae laoreet vel, feugiat eget erat. Donec eleifend elit id velit feugiat blandit. Quisque finibus elit eget aliquet ornare. Quisque sodales libero quis feugiat pulvinar. Ut diam ante, venenatis nec pulvinar a, sodales ac sapien. Etiam tincidunt rhoncus justo non finibus.
+                                            </div>
+                                        </div>                                        
+                                    </li>
+                                </ul>
+                                <div class="product-see-more">see more</div>
+                                <div class="row">
+                                    <div class="col-xs-1 reviewer-avatar"><i class="icon-account-01"></i></div>
+                                    <div class="col-xs-11 leave-review-part">
+                                        <input type="text" placeholder="your name here ...">
+                                        <textarea placeholder="your comment here..." cols="30" rows="10"></textarea>
+                                        <button class="leave-comment">leave comment</button>                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <div class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#similar" aria-expanded="true" aria-controls="collapseOne">
+                            Similar products <span class="icon-arrow_down-02 float-right"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="similar" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body padding-0 mobile-search-page">
+                            <div class="col-xs-12 padding-0">
+                                <div class="thumbnail mobile-thumbnail">
+                                    <div class="item-status background-yellow">NEW</div>
+                                    <div class="circle-o"><i class="fa fa-dot-circle-o"></i></div>
+                                    <div class="product-image" style="background-image: url(../img/2.jpg)"></div>                    
+                                    <div class="caption">
+                                        <h4><a href="#">DEWALT</a>
+                                        </h4>
+                                        <p>Drill/Driver and Impact Driver</p>
+                                    </div>  
+                                    <div class="price">16 000 AMD</div>
+                                    <div class="delivery">бесплатная доставка</div>  
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-7 padding-0">
+                                            <div class="out-of-stock"></div>
+                                            <div class="quanity">
+                                                <div>-</div>   
+                                                <div>1</div>  
+                                                <div>+</div>                             
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <div class="icon-add_to_basket-01"></div>
+                                                <span>&nbsp;Add to Cart</span>
+                                            </div>
+                                        </div> 
+                                    </div>  
+                                    <div class="ratings">
+                                        <p>                           
+                                            <span class="icon-product_star-01 red"></span>
+                                            <span class="icon-product_star-01 red"></span>
+                                            <span class="icon-product_star-01 red"></span>
+                                            <span class="icon-product_star-01"></span>
+                                            <span class="icon-product_star-01"></span>
+                                        </p>
+                                    </div>                                 
+                                </div>
+                        </div>
+                        <div class="col-xs-12 padding-0">
+                                <div class="thumbnail mobile-thumbnail">
+                                    <div class="item-status background-yellow">NEW</div>
+                                    <div class="circle-o"><i class="fa fa-dot-circle-o"></i></div>
+                                    <div class="product-image" style="background-image: url(../img/2.jpg)"></div>                    
+                                    <div class="caption">
+                                        <h4><a href="#">DEWALT</a>
+                                        </h4>
+                                        <p>Drill/Driver and Impact Driver</p>
+                                    </div>  
+                                    <div class="price">16 000 AMD</div>
+                                    <div class="delivery">бесплатная доставка</div>  
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-7 padding-0">
+                                            <div class="out-of-stock"></div>
+                                            <div class="quanity">
+                                                <div>-</div>   
+                                                <div>1</div>  
+                                                <div>+</div>                             
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <div class="icon-add_to_basket-01"></div>
+                                                <span>&nbsp;Add to Cart</span>
+                                            </div>
+                                        </div> 
+                                    </div>  
+                                    <div class="ratings">
+                                        <p>                           
+                                            <span class="icon-product_star-01 red"></span>
+                                            <span class="icon-product_star-01 red"></span>
+                                            <span class="icon-product_star-01 red"></span>
+                                            <span class="icon-product_star-01"></span>
+                                            <span class="icon-product_star-01"></span>
+                                        </p>
+                                    </div>                                 
+                                </div>
+                        </div>
+                        <div class="col-xs-12 padding-0">
+                                <div class="thumbnail mobile-thumbnail">
+                                    <div class="item-status background-yellow">NEW</div>
+                                    <div class="circle-o"><i class="fa fa-dot-circle-o"></i></div>
+                                    <div class="product-image" style="background-image: url(../img/2.jpg)"></div>                    
+                                    <div class="caption">
+                                        <h4><a href="#">DEWALT</a>
+                                        </h4>
+                                        <p>Drill/Driver and Impact Driver</p>
+                                    </div>  
+                                    <div class="price">16 000 AMD</div>
+                                    <div class="delivery">бесплатная доставка</div>  
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-7 padding-0">
+                                            <div class="out-of-stock"></div>
+                                            <div class="quanity">
+                                                <div>-</div>   
+                                                <div>1</div>  
+                                                <div>+</div>                             
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <div class="icon-add_to_basket-01"></div>
+                                                <span>&nbsp;Add to Cart</span>
+                                            </div>
+                                        </div> 
+                                    </div>  
+                                    <div class="ratings">
+                                        <p>                           
+                                            <span class="icon-product_star-01 red"></span>
+                                            <span class="icon-product_star-01 red"></span>
+                                            <span class="icon-product_star-01 red"></span>
+                                            <span class="icon-product_star-01"></span>
+                                            <span class="icon-product_star-01"></span>
+                                        </p>
+                                    </div>                                 
+                                </div>
+                        </div>
+                        <div class="col-xs-12 padding-0">
+                                <div class="thumbnail mobile-thumbnail">
+                                    <div class="item-status background-yellow">NEW</div>
+                                    <div class="circle-o"><i class="fa fa-dot-circle-o"></i></div>
+                                    <div class="product-image" style="background-image: url(../img/2.jpg)"></div>                    
+                                    <div class="caption">
+                                        <h4><a href="#">DEWALT</a>
+                                        </h4>
+                                        <p>Drill/Driver and Impact Driver</p>
+                                    </div>  
+                                    <div class="price">16 000 AMD</div>
+                                    <div class="delivery">бесплатная доставка</div>  
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-7 padding-0">
+                                            <div class="out-of-stock"></div>
+                                            <div class="quanity">
+                                                <div>-</div>   
+                                                <div>1</div>  
+                                                <div>+</div>                             
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <div class="icon-add_to_basket-01"></div>
+                                                <span>&nbsp;Add to Cart</span>
+                                            </div>
+                                        </div> 
+                                    </div>  
+                                    <div class="ratings">
+                                        <p>                           
+                                            <span class="icon-product_star-01 red"></span>
+                                            <span class="icon-product_star-01 red"></span>
+                                            <span class="icon-product_star-01 red"></span>
+                                            <span class="icon-product_star-01"></span>
+                                            <span class="icon-product_star-01"></span>
+                                        </p>
+                                    </div>                                 
+                                </div>
+                        </div>
+                        <div class="col-xs-12 padding-0">
+                                <div class="thumbnail mobile-thumbnail">
+                                    <div class="item-status background-yellow">NEW</div>
+                                    <div class="circle-o"><i class="fa fa-dot-circle-o"></i></div>
+                                    <div class="product-image" style="background-image: url(../img/2.jpg)"></div>                    
+                                    <div class="caption">
+                                        <h4><a href="#">DEWALT</a>
+                                        </h4>
+                                        <p>Drill/Driver and Impact Driver</p>
+                                    </div>  
+                                    <div class="price">16 000 AMD</div>
+                                    <div class="delivery">бесплатная доставка</div>  
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-7 padding-0">
+                                            <div class="out-of-stock"></div>
+                                            <div class="quanity">
+                                                <div>-</div>   
+                                                <div>1</div>  
+                                                <div>+</div>                             
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <div class="icon-add_to_basket-01"></div>
+                                                <span>&nbsp;Add to Cart</span>
+                                            </div>
+                                        </div> 
+                                    </div>  
+                                    <div class="ratings">
+                                        <p>                           
+                                            <span class="icon-product_star-01 red"></span>
+                                            <span class="icon-product_star-01 red"></span>
+                                            <span class="icon-product_star-01 red"></span>
+                                            <span class="icon-product_star-01"></span>
+                                            <span class="icon-product_star-01"></span>
+                                        </p>
+                                    </div>                                 
+                                </div>
+                        </div>
+                        
+
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <div class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#joint" aria-expanded="true" aria-controls="collapseOne">
+                            Joint purchase <span class="icon-arrow_down-02 float-right"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="joint" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body padding-0">
+                        
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+       </div>
+
+        <footer>
+            <div class="container padding-0">
+                <div class="col-xs-12 col-md-8">
+                    <div class="footer-title">GET UPDATES</div>
+                    <div class="padding-bottom-10">Join 211,004 individuals who already have a head start.</div>
+                    <div class="input-group">
+                        <input type="text" placeholder="your mail here...">
+                        <button class="join">JOIN</button>
+                    </div>
+                    <div class="footer-title">PAYYMENT OPTIONS</div>
+                    <div class="row margin-padding-0">
+                        <div class="col-md-3 col-xs-3 card visa"></div>
+                        <div class="col-md-3 col-xs-3 card master"></div> 
+                        <div class="col-md-3 col-xs-3 card arca"></div> 
+                        <div class="col-md-3 col-xs-3 card idram"></div>
+                                             
+                     </div>
+                </div>               
+            </div> 
+            <div class="container-fluid text-center background-white">
+                <div class="row">
+                    <ul class="footer-options">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Credit</a></li>
+                        <li><a href="#">Desktop site</a></li>
+                        <li><a href="#">Arm</a></li>
+                        <li><a href="#">rus</a></li>
+                        <li><a href="#">eng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-horizontal-line"></div>
+                 <div class="row">
+                    <div class="col-xs-12 col-md-12 copyright">
+                        <p>&copy; Deco 2016, All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+                
+    </div>
+
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery.range.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+    
+    <script src="../js/deco.js"></script>     
+
+     <!--Angular JS-->
+      <script src="../js/angular.min.js"></script>
+      <script src="../js/angular-route.min.js"></script>
+     <script src="../js/app.js"></script>
+     <script src="../js/header-fonts.js"></script>
+</body>
+
+</html>
