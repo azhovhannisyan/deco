@@ -44,11 +44,17 @@
                         <i class="icon-help-01"></i>
                     </div>
                     <div class="chat-opened">
-                        <div class="type-here">
-                            <div class="fa fa-paperclip"></div>
-                            <input type="textarea" cols="10" placeholder="type here...">
-                            <div class="fa fa-paper-plane"></div>
-                        </div>
+                        <div class="mobile-online-consulting">ONLINE CONSULTING</div>
+                         <table class="type-here">
+                            <tr>
+                                <td><div class="fa fa-paperclip"></div></td>
+                            <td>
+                                <textarea  class="typing" cols="10" placeholder="type here..."></textarea>
+                            </td>
+                            <td><div class="fa fa-paper-plane float-right"></div></td>
+                            </tr>
+                            
+                        </table>
                         <ul class="messages">
                             <li class="message">
                                 <div class="message-image" style="background-image: url(../img/profile-photo.jpg)">
@@ -91,7 +97,7 @@
                     </div>
             </div>
 
-            <div class="container header-part background-gray">
+            <div class="container header-part">
                 <div class="col-xs-6 col-md-6 padding-0 logo-part">
                     <a href="menu.html">
                         <div class="mobile-menu">
@@ -103,16 +109,22 @@
                     </a>                
                 </div>
                 <div class="col-xs-6 col-md-6 padding-0 icons-part">
-                    <div class="col-xs-3 col-md-3 icons activated account" ng-click="accountOpened=!accountOpened">
-                        <span aria-hidden="true" class="icon-account-01"></span>          
-                    </div>
+                    <a href="">
+                        <div class="col-xs-3 col-md-3 icons activated account">
+                            <a href="personal-information.html">
+                                <span class="icon-account-01"></span>  
+                            </a>                           
+                        </div>
+                    </a>
                     <div class="icons col-xs-3 col-md-3">
                         <a href="help.html">
                             <i class="icon-help-01"></i>
                         </a>
                     </div>
                     <div class="icons col-xs-3 col-md-3">
-                        <i class="icon-wishlist_no_wishes-01 blue"></i>
+                        <a href="wishlist.html">
+                            <i class="icon-wishlist_no_wishes-01"></i>
+                        </a>
                         <div class="whishlist-circle-o red"><i class="fa fa-dot-circle-o red"></i></div>             
                     </div>
                     <a href="cart.html">
@@ -399,7 +411,7 @@
                                 <span>&nbsp;Add to Cart</span>
                             </div>
                         </div> 
-                    </div>  
+                    </div> 
                     <div class="ratings">
                         <p>                           
                             <span class="icon-product_star-01 red"></span>
@@ -408,7 +420,8 @@
                             <span class="icon-product_star-01"></span>
                             <span class="icon-product_star-01"></span>
                         </p>
-                    </div>                                 
+                    </div>   
+                                                   
                 </div>
            </div>
        </div>

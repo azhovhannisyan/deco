@@ -45,12 +45,21 @@
                 <div class="submit-image-part">
                     <img src="../img/3.jpg" alt="">
                     <div class="bold">DEWALT</div>
-                    <div>Drill/Driver and Impact Driver Combo Kit - Cordless - 20 V</div>
+                    <div>Drill/Driver and Impact Driver</div>
                 </div>
-                <div class="review-right">
+                <div class="review-right text-center">
                     <div class="container order-form">
-                        <div class="page-subtitle">MY REVIEW</div>
-                        <div class="col-xs-12 to-rate-part">
+                        <div class="page-subtitle text-center">MY REVIEW</div>                       
+                        <div class="col-xs-12 inputs">
+                            <textarea name="message" id="message" cols="30" rows="8" placeholder="type review text here..."></textarea>
+                        </div>
+                        <div class="col-xs-12 inputs">
+                            <input type="text" placeholder="type your name here...">
+                        </div>
+                        <div class="col-xs-12  inputs">
+                            <input type="text" placeholder="type your email here...">
+                        </div> 
+                         <div class="col-xs-12 to-rate-part">
                             <div class="to-rate">Click to rate</div>
                             <div class="ratings">
                                 <p>
@@ -61,18 +70,9 @@
                                     <span class="icon-product_star-01"></span>
                                 </p>
                             </div>                        
-                        </div>
-                        <div class="col-xs-12 inputs">
-                            <textarea name="message" id="message" cols="30" rows="8" placeholder="type review text here..."></textarea>
-                        </div>
-                        <div class="col-xs-12 inputs">
-                            <input type="text" placeholder="type your name here...">
-                        </div>
-                        <div class="col-xs-12  inputs">
-                            <input type="text" placeholder="type your email here...">
-                        </div>                       
-                        <div class="submit">SUBMIT REVIEW</div>
-                    </div> 
+                        </div>                      
+                        <div class="submit">submit review</div>
+                    </div>
 
                 </div>
             </div>
@@ -83,11 +83,17 @@
                         <i class="icon-help-01"></i>
                     </div>
                     <div class="chat-opened">
-                        <div class="type-here">
-                            <div class="fa fa-paperclip"></div>
-                            <input type="textarea" cols="10" placeholder="type here...">
-                            <div class="fa fa-paper-plane"></div>
-                        </div>
+                        <div class="mobile-online-consulting">ONLINE CONSULTING</div>
+                         <table class="type-here">
+                            <tr>
+                                <td><div class="fa fa-paperclip"></div></td>
+                            <td>
+                                <textarea  class="typing" cols="10" placeholder="type here..."></textarea>
+                            </td>
+                            <td><div class="fa fa-paper-plane float-right"></div></td>
+                            </tr>
+                            
+                        </table>
                         <ul class="messages">
                             <li class="message">
                                 <div class="message-image" style="background-image: url(../img/profile-photo.jpg)">
@@ -130,7 +136,7 @@
                     </div>
             </div>
 
-            <div class="container header-part background-gray">
+            <div class="container header-part">
                 <div class="col-xs-6 col-md-6 padding-0 logo-part">
                     <a href="menu.html">
                         <div class="mobile-menu">
@@ -142,16 +148,22 @@
                     </a>                
                 </div>
                 <div class="col-xs-6 col-md-6 padding-0 icons-part">
-                    <div class="col-xs-3 col-md-3 icons activated account" ng-click="accountOpened=!accountOpened">
-                        <span aria-hidden="true" class="icon-account-01"></span>          
-                    </div>
+                    <a href="">
+                        <div class="col-xs-3 col-md-3 icons activated account">
+                            <a href="personal-information.html">
+                                <span class="icon-account-01"></span>  
+                            </a>                           
+                        </div>
+                    </a>
                     <div class="icons col-xs-3 col-md-3">
                         <a href="help.html">
                             <i class="icon-help-01"></i>
                         </a>
                     </div>
                     <div class="icons col-xs-3 col-md-3">
-                        <i class="icon-wishlist_no_wishes-01 blue"></i>
+                        <a href="wishlist.html">
+                            <i class="icon-wishlist_no_wishes-01"></i>
+                        </a>
                         <div class="whishlist-circle-o red"><i class="fa fa-dot-circle-o red"></i></div>             
                     </div>
                     <a href="cart.html">
@@ -437,153 +449,116 @@
                     </div>
                     <div id="similar" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                         <div class="panel-body padding-0 mobile-search-page">
-                            <div class="col-xs-12 padding-0">
-                                <div class="thumbnail mobile-thumbnail">
-                                    <div class="item-status background-yellow">NEW</div>
-                                    <div class="circle-o"><i class="fa fa-dot-circle-o"></i></div>
-                                    <div class="product-image" style="background-image: url(../img/2.jpg)"></div>                    
-                                    <div class="caption">
-                                        <h4><a href="#">DEWALT</a>
-                                        </h4>
-                                        <p>Drill/Driver and Impact Driver</p>
-                                    </div>  
-                                    <div class="price">16 000 AMD</div>
-                                    <div class="delivery">бесплатная доставка</div>  
-                                    <div class="row">
-                                        <div class="col-xs-12 col-md-7 padding-0">
-                                            <div class="out-of-stock"></div>
-                                            <div class="quanity">
-                                                <div>-</div>   
-                                                <div>1</div>  
-                                                <div>+</div>                             
-                                            </div>
-                                            <div class="add-to-cart">
-                                                <div class="icon-add_to_basket-01"></div>
-                                                <span>&nbsp;Add to Cart</span>
-                                            </div>
-                                        </div> 
-                                    </div>  
-                                    <div class="ratings">
-                                        <p>                           
-                                            <span class="icon-product_star-01 red"></span>
-                                            <span class="icon-product_star-01 red"></span>
-                                            <span class="icon-product_star-01 red"></span>
-                                            <span class="icon-product_star-01"></span>
-                                            <span class="icon-product_star-01"></span>
-                                        </p>
-                                    </div>                                 
-                                </div>
+                        <div class="col-xs-12 padding-0">
+                            <div class="thumbnail mobile-thumbnail">
+                                <div class="item-status background-yellow">NEW</div>
+                                <div class="circle-o"><i class="fa fa-dot-circle-o"></i></div>
+                                <div class="product-image" style="background-image: url(../img/2.jpg)"></div>                    
+                                <div class="caption">
+                                    <h4><a href="#">DEWALT</a>
+                                    </h4>
+                                    <p>Drill/Driver and Impact Driver</p>
+                                </div>  
+                                <div class="price">16 000 AMD</div>
+                                <div class="delivery">бесплатная доставка</div>  
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-7 padding-0">
+                                        <div class="out-of-stock"></div>
+                                        <div class="quanity">
+                                            <div>-</div>   
+                                            <div>1</div>  
+                                            <div>+</div>                             
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <div class="icon-add_to_basket-01"></div>
+                                            <span>&nbsp;Add to Cart</span>
+                                        </div>
+                                    </div> 
+                                </div>  
+                                <div class="ratings">
+                                    <p>                           
+                                        <span class="icon-product_star-01 red"></span>
+                                        <span class="icon-product_star-01 red"></span>
+                                        <span class="icon-product_star-01 red"></span>
+                                        <span class="icon-product_star-01"></span>
+                                        <span class="icon-product_star-01"></span>
+                                    </p>
+                                </div>                                 
+                            </div>
                         </div>
                         <div class="col-xs-12 padding-0">
-                                <div class="thumbnail mobile-thumbnail">
-                                    <div class="item-status background-yellow">NEW</div>
-                                    <div class="circle-o"><i class="fa fa-dot-circle-o"></i></div>
-                                    <div class="product-image" style="background-image: url(../img/2.jpg)"></div>                    
-                                    <div class="caption">
-                                        <h4><a href="#">DEWALT</a>
-                                        </h4>
-                                        <p>Drill/Driver and Impact Driver</p>
-                                    </div>  
-                                    <div class="price">16 000 AMD</div>
-                                    <div class="delivery">бесплатная доставка</div>  
-                                    <div class="row">
-                                        <div class="col-xs-12 col-md-7 padding-0">
-                                            <div class="out-of-stock"></div>
-                                            <div class="quanity">
-                                                <div>-</div>   
-                                                <div>1</div>  
-                                                <div>+</div>                             
-                                            </div>
-                                            <div class="add-to-cart">
-                                                <div class="icon-add_to_basket-01"></div>
-                                                <span>&nbsp;Add to Cart</span>
-                                            </div>
-                                        </div> 
-                                    </div>  
-                                    <div class="ratings">
-                                        <p>                           
-                                            <span class="icon-product_star-01 red"></span>
-                                            <span class="icon-product_star-01 red"></span>
-                                            <span class="icon-product_star-01 red"></span>
-                                            <span class="icon-product_star-01"></span>
-                                            <span class="icon-product_star-01"></span>
-                                        </p>
-                                    </div>                                 
-                                </div>
+                            <div class="thumbnail mobile-thumbnail">
+                                <div class="item-status background-yellow">NEW</div>
+                                <div class="circle-o"><i class="fa fa-dot-circle-o"></i></div>
+                                <div class="product-image" style="background-image: url(../img/2.jpg)"></div>                    
+                                <div class="caption">
+                                    <h4><a href="#">DEWALT</a>
+                                    </h4>
+                                    <p>Drill/Driver and Impact Driver</p>
+                                </div>  
+                                <div class="price">16 000 AMD</div>
+                                <div class="delivery">бесплатная доставка</div>  
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-7 padding-0">
+                                        <div class="out-of-stock"></div>
+                                        <div class="quanity">
+                                            <div>-</div>   
+                                            <div>1</div>  
+                                            <div>+</div>                             
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <div class="icon-add_to_basket-01"></div>
+                                            <span>&nbsp;Add to Cart</span>
+                                        </div>
+                                    </div> 
+                                </div>  
+                                <div class="ratings">
+                                    <p>                           
+                                        <span class="icon-product_star-01 red"></span>
+                                        <span class="icon-product_star-01 red"></span>
+                                        <span class="icon-product_star-01 red"></span>
+                                        <span class="icon-product_star-01"></span>
+                                        <span class="icon-product_star-01"></span>
+                                    </p>
+                                </div>                                 
+                            </div>
                         </div>
                         <div class="col-xs-12 padding-0">
-                                <div class="thumbnail mobile-thumbnail">
-                                    <div class="item-status background-yellow">NEW</div>
-                                    <div class="circle-o"><i class="fa fa-dot-circle-o"></i></div>
-                                    <div class="product-image" style="background-image: url(../img/2.jpg)"></div>                    
-                                    <div class="caption">
-                                        <h4><a href="#">DEWALT</a>
-                                        </h4>
-                                        <p>Drill/Driver and Impact Driver</p>
-                                    </div>  
-                                    <div class="price">16 000 AMD</div>
-                                    <div class="delivery">бесплатная доставка</div>  
-                                    <div class="row">
-                                        <div class="col-xs-12 col-md-7 padding-0">
-                                            <div class="out-of-stock"></div>
-                                            <div class="quanity">
-                                                <div>-</div>   
-                                                <div>1</div>  
-                                                <div>+</div>                             
-                                            </div>
-                                            <div class="add-to-cart">
-                                                <div class="icon-add_to_basket-01"></div>
-                                                <span>&nbsp;Add to Cart</span>
-                                            </div>
-                                        </div> 
-                                    </div>  
-                                    <div class="ratings">
-                                        <p>                           
-                                            <span class="icon-product_star-01 red"></span>
-                                            <span class="icon-product_star-01 red"></span>
-                                            <span class="icon-product_star-01 red"></span>
-                                            <span class="icon-product_star-01"></span>
-                                            <span class="icon-product_star-01"></span>
-                                        </p>
-                                    </div>                                 
-                                </div>
-                        </div>
-                        <div class="col-xs-12 padding-0">
-                                <div class="thumbnail mobile-thumbnail">
-                                    <div class="item-status background-yellow">NEW</div>
-                                    <div class="circle-o"><i class="fa fa-dot-circle-o"></i></div>
-                                    <div class="product-image" style="background-image: url(../img/2.jpg)"></div>                    
-                                    <div class="caption">
-                                        <h4><a href="#">DEWALT</a>
-                                        </h4>
-                                        <p>Drill/Driver and Impact Driver</p>
-                                    </div>  
-                                    <div class="price">16 000 AMD</div>
-                                    <div class="delivery">бесплатная доставка</div>  
-                                    <div class="row">
-                                        <div class="col-xs-12 col-md-7 padding-0">
-                                            <div class="out-of-stock"></div>
-                                            <div class="quanity">
-                                                <div>-</div>   
-                                                <div>1</div>  
-                                                <div>+</div>                             
-                                            </div>
-                                            <div class="add-to-cart">
-                                                <div class="icon-add_to_basket-01"></div>
-                                                <span>&nbsp;Add to Cart</span>
-                                            </div>
-                                        </div> 
-                                    </div>  
-                                    <div class="ratings">
-                                        <p>                           
-                                            <span class="icon-product_star-01 red"></span>
-                                            <span class="icon-product_star-01 red"></span>
-                                            <span class="icon-product_star-01 red"></span>
-                                            <span class="icon-product_star-01"></span>
-                                            <span class="icon-product_star-01"></span>
-                                        </p>
-                                    </div>                                 
-                                </div>
+                            <div class="thumbnail mobile-thumbnail">
+                                <div class="item-status background-yellow">NEW</div>
+                                <div class="circle-o"><i class="fa fa-dot-circle-o"></i></div>
+                                <div class="product-image" style="background-image: url(../img/2.jpg)"></div>                    
+                                <div class="caption">
+                                    <h4><a href="#">DEWALT</a>
+                                    </h4>
+                                    <p>Drill/Driver and Impact Driver</p>
+                                </div>  
+                                <div class="price">16 000 AMD</div>
+                                <div class="delivery">бесплатная доставка</div>  
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-7 padding-0">
+                                        <div class="out-of-stock"></div>
+                                        <div class="quanity">
+                                            <div>-</div>   
+                                            <div>1</div>  
+                                            <div>+</div>                             
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <div class="icon-add_to_basket-01"></div>
+                                            <span>&nbsp;Add to Cart</span>
+                                        </div>
+                                    </div> 
+                                </div>  
+                                <div class="ratings">
+                                    <p>                           
+                                        <span class="icon-product_star-01 red"></span>
+                                        <span class="icon-product_star-01 red"></span>
+                                        <span class="icon-product_star-01 red"></span>
+                                        <span class="icon-product_star-01"></span>
+                                        <span class="icon-product_star-01"></span>
+                                    </p>
+                                </div>                                 
+                            </div>
                         </div>
                         <div class="col-xs-12 padding-0">
                                 <div class="thumbnail mobile-thumbnail">
@@ -637,10 +612,191 @@
                         </div>
                     </div>
                     <div id="joint" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                        <div class="panel-body padding-0">
-                        
+                        <div class="panel-body padding-0 background-gray">
+                            <div class="col-xs-12 more-like">More Items (+3) Like This</div>
+                            <div class="col-xs-12 padding-0">
+                                <div class="carousel slide multi-item-carousel" data-type="multi5" data-interval="3000" id="theCarousel">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <div class="col-xs-6 padding-0">
+                                                <div class="thumbnail mobile-thumbnail">
+                                                    <div class="product-image" style="background-image: url(../img/2.jpg)"></div>                    
+                                                    <div class="caption">
+                                                        <h4><a href="#">DEWALT</a>
+                                                        </h4>
+                                                        <p>Drill/Driver and Impact Driver</p>
+                                                    </div>                     
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 padding-0">
+                                                <div class="thumbnail mobile-thumbnail">
+                                                    <div class="product-image" style="background-image: url(../img/2.jpg)"></div>                    
+                                                    <div class="caption">
+                                                        <h4><a href="#">DEWALT</a>
+                                                        </h4>
+                                                        <p>Drill/Driver and Impact Driver</p>
+                                                    </div>                     
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                       
+                                        <!--<div class="item">
+                                            <div class="col-xs-6 padding-0">
+                                                <div class="thumbnail mobile-thumbnail">
+                                                    <div class="product-image" style="background-image: url(../img/2.jpg)"></div>                    
+                                                    <div class="caption">
+                                                        <h4><a href="#">DEWALT</a>
+                                                        </h4>
+                                                        <p>Drill/Driver and Impact Driver</p>
+                                                    </div>                     
+                                                </div>
+                                            </div>
+                                        </div>                                    -->
+                                    </div>
+                                    <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="icon-arrow_left-01"></i></a>
+                                    <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="icon-arrow_right-01"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 joint-together">Frequently bought together</div>
+                            <div class="col-xs-12 padding-0 position-relative">
+                                <div class="plus-product"><i class="fa fa-plus"></i></div>
+                                <div class="thumbnail mobile-thumbnail">
+                                    <div class="item-status background-yellow">NEW</div>
+                                    <div class="circle-o">
+                                        <div class="checkbox">
+                                            <input type="checkbox" value="sale"/>
+                                            <div class="checkbox-outer"><i class="fa fa-check"></i></div>
+                                            <div class="checkbox-shadow"></div>                            
+                                        </div>
+                                    </div>
+                                    <div class="product-image" style="background-image: url(../img/2.jpg)"></div>                    
+                                    <div class="caption">
+                                        <h4><a href="#">DEWALT</a>
+                                        </h4>
+                                        <p>Drill/Driver and Impact Driver</p>
+                                    </div>  
+                                    <div class="price">16 000 AMD</div>
+                                    <div class="delivery">бесплатная доставка</div>  
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-7 padding-0">
+                                            <div class="out-of-stock"></div>
+                                            <div class="quanity">
+                                                <div>-</div>   
+                                                <div>1</div>  
+                                                <div>+</div>                             
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <div class="icon-add_to_basket-01"></div>
+                                                <span>&nbsp;Add to Cart</span>
+                                            </div>
+                                        </div> 
+                                    </div> 
+                                    <div class="ratings">
+                                        <p>                           
+                                            <span class="icon-product_star-01 red"></span>
+                                            <span class="icon-product_star-01 red"></span>
+                                            <span class="icon-product_star-01 red"></span>
+                                            <span class="icon-product_star-01"></span>
+                                            <span class="icon-product_star-01"></span>
+                                        </p>
+                                    </div>   
+                                                                
+                                </div>
+                            </div>
 
-                            
+                            <div class="col-xs-12 padding-0 position-relative">
+                                <div class="plus-product"><i class="fa fa-plus"></i></div>
+                                    <div class="thumbnail mobile-thumbnail">
+                                        <div class="item-status background-yellow">NEW</div>
+                                        <div class="circle-o">
+                                            <div class="checkbox">
+                                                <input type="checkbox" value="sale"/>
+                                                <div class="checkbox-outer"><i class="fa fa-check"></i></div>
+                                                <div class="checkbox-shadow"></div>                            
+                                            </div>
+                                        </div>
+                                        <div class="product-image" style="background-image: url(../img/2.jpg)"></div>                    
+                                        <div class="caption">
+                                            <h4><a href="#">DEWALT</a>
+                                            </h4>
+                                            <p>Drill/Driver and Impact Driver</p>
+                                        </div>  
+                                        <div class="price">16 000 AMD</div>
+                                        <div class="delivery">бесплатная доставка</div>  
+                                        <div class="row">
+                                            <div class="col-xs-12 col-md-7 padding-0">
+                                                <div class="out-of-stock"></div>
+                                                <div class="quanity">
+                                                    <div>-</div>   
+                                                    <div>1</div>  
+                                                    <div>+</div>                             
+                                                </div>
+                                                <div class="add-to-cart">
+                                                    <div class="icon-add_to_basket-01"></div>
+                                                    <span>&nbsp;Add to Cart</span>
+                                                </div>
+                                            </div> 
+                                        </div> 
+                                        <div class="ratings">
+                                            <p>                           
+                                                <span class="icon-product_star-01 red"></span>
+                                                <span class="icon-product_star-01 red"></span>
+                                                <span class="icon-product_star-01 red"></span>
+                                                <span class="icon-product_star-01"></span>
+                                                <span class="icon-product_star-01"></span>
+                                            </p>
+                                        </div>   
+                                                                    
+                                    </div>
+                            </div>
+                            <div class="col-xs-12 padding-0 position-relative">
+                                    <div class="thumbnail mobile-thumbnail">
+                                        <div class="item-status background-yellow">NEW</div>
+                                        <div class="circle-o">
+                                            <div class="checkbox">
+                                                <input type="checkbox" value="sale"/>
+                                                <div class="checkbox-outer"><i class="fa fa-check"></i></div>
+                                                <div class="checkbox-shadow"></div>                            
+                                            </div>
+                                                            
+                                        </div>
+                                        <div class="product-image" style="background-image: url(../img/2.jpg)"></div>                    
+                                        <div class="caption">
+                                            <h4><a href="#">DEWALT</a>
+                                            </h4>
+                                            <p>Drill/Driver and Impact Driver</p>
+                                        </div>  
+                                        <div class="price">16 000 AMD</div>
+                                        <div class="delivery">бесплатная доставка</div>  
+                                        <div class="row">
+                                            <div class="col-xs-12 col-md-7 padding-0">
+                                                <div class="out-of-stock"></div>
+                                                <div class="quanity">
+                                                    <div>-</div>   
+                                                    <div>1</div>  
+                                                    <div>+</div>                             
+                                                </div>
+                                                <div class="add-to-cart">
+                                                    <div class="icon-add_to_basket-01"></div>
+                                                    <span>&nbsp;Add to Cart</span>
+                                                </div>
+                                            </div> 
+                                        </div> 
+                                        <div class="ratings">
+                                            <p>                           
+                                                <span class="icon-product_star-01 red"></span>
+                                                <span class="icon-product_star-01 red"></span>
+                                                <span class="icon-product_star-01 red"></span>
+                                                <span class="icon-product_star-01"></span>
+                                                <span class="icon-product_star-01"></span>
+                                            </p>
+                                        </div>   
+                                                                    
+                                    </div>
+                            </div> 
+
+                            <div class="col-xs-12 buy-both">BUY BOTH FOR 32000 AMD</div>
                         </div>
                     </div>
                 </div>
@@ -691,9 +847,10 @@
                 
     </div>
 
-    <!-- jQuery -->
+    <!-- jQuery -->   
     <script src="../js/jquery.js"></script>
     <script src="../js/jquery.range.js"></script>
+   
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
@@ -705,6 +862,12 @@
       <script src="../js/angular-route.min.js"></script>
      <script src="../js/app.js"></script>
      <script src="../js/header-fonts.js"></script>
+
+       <script>
+        $('.carousel').carousel({
+            interval: 2000
+         })
+    </script>
 </body>
 
 </html>

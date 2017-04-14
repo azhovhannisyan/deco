@@ -42,11 +42,17 @@
                         <i class="icon-help-01"></i>
                     </div>
                     <div class="chat-opened">
-                        <div class="type-here">
-                            <div class="fa fa-paperclip"></div>
-                            <input type="textarea" cols="10" placeholder="type here...">
-                            <div class="fa fa-paper-plane"></div>
-                        </div>
+                        <div class="mobile-online-consulting">ONLINE CONSULTING</div>
+                         <table class="type-here">
+                            <tr>
+                                <td><div class="fa fa-paperclip"></div></td>
+                            <td>
+                                <textarea  class="typing" cols="10" placeholder="type here..."></textarea>
+                            </td>
+                            <td><div class="fa fa-paper-plane float-right"></div></td>
+                            </tr>
+                            
+                        </table>
                         <ul class="messages">
                             <li class="message">
                                 <div class="message-image" style="background-image: url(../img/profile-photo.jpg)">
@@ -91,83 +97,40 @@
 
             <div class="container header-part">
                 <div class="col-xs-6 col-md-6 padding-0 logo-part">
-                    <div class="mobile-menu">
-                        <i class="icon-hamburger-01"></i>
-                    </div>
+                    <a href="menu.html">
+                        <div class="mobile-menu">
+                            <i class="icon-hamburger-01"></i>
+                        </div>
+                    </a>
                     <a href="index.html">
                         <div class="deco-logo"></div>
                     </a>                
                 </div>
                 <div class="col-xs-6 col-md-6 padding-0 icons-part">
-                    <div class="col-xs-3 col-md-3 icons activated account" ng-click="accountOpened=!accountOpened">
-                        <span aria-hidden="true" class="icon-account-01"></span>
-                        <div class="account-opened hidden-xs hidden-xs" ng-init="accountOpened=false" ng-if="accountOpened">
-                            <div class="not-loged-in">
-                                <a href="login.html"><div class="blue">Login to your account</div></a>
-                                <a href="register.html"><div class="grey margin-top-10">New user? Register here</div></a>
-                            </div>
-                            <div class="loged-in">
-                                <ul>
-                                    <li class="welcome">WELCOME<br/>ARAYIK</li>
-                                    <li><a href="personal-information.html">My personal information</a></li>
-                                    <li>My coupon wallet</li>
-                                    <li>My purchase history</li>
-                                    <li class="logout">logout</li>
-                                </ul>
-                            </div>
-                        </div>          
-                    </div>
+                    <a href="">
+                        <div class="col-xs-3 col-md-3 icons activated account">
+                            <a href="personal-information.html">
+                                <span class="icon-account-01"></span>  
+                            </a>                           
+                        </div>
+                    </a>
                     <div class="icons col-xs-3 col-md-3">
                         <a href="help.html">
                             <i class="icon-help-01"></i>
                         </a>
                     </div>
                     <div class="icons col-xs-3 col-md-3">
-                        <i class="icon-wishlist_no_wishes-01"></i>
+                        <a href="wishlist.html">
+                            <i class="icon-wishlist_no_wishes-01"></i>
+                        </a>
                         <div class="whishlist-circle-o red"><i class="fa fa-dot-circle-o red"></i></div>             
                     </div>
-                    <div class="icons col-xs-3 col-md-3" ng-click="cartOpened=!cartOpened">
-                        <i class="icon-basket-01"></i>
-                        <div class="account-opened cart-list hidden-xs hidden-xs" ng-init="cartOpened=false" ng-if="cartOpened">
-                            <ul class="home-cart-items">
-                                <li>
-                                    <div class="col-lg-3 cart-item-image"></div>
-                                    <div class="col-lg-8 cart-item-text">
-                                        <div class="cart-item-title">DEWALT</div>
-                                        <div>Drill/Driver and Imp- act Driver</div>
-                                        <div class="cart-item-quanity">
-                                            <div class="icon-cart_dropdown_icon-01"></div>
-                                            <span>1</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="col-lg-3 cart-item-image"></div>
-                                    <div class="col-lg-8 cart-item-text">
-                                        <div class="cart-item-title">DEWALT</div>
-                                        <div>Drill/Driver and Imp- act Driver</div>
-                                        <div class="cart-item-quanity">
-                                            <div class="icon-cart_dropdown_icon-01"></div>
-                                            <span>1</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="col-lg-3 cart-item-image"></div>
-                                    <div class="col-lg-8 cart-item-text">
-                                        <div class="cart-item-title">DEWALT</div>
-                                        <div>Drill/Driver and Imp- act Driver</div>
-                                        <div class="cart-item-quanity">
-                                            <div class="icon-cart_dropdown_icon-01"></div>
-                                            <span>1</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="logout"><a href="shopping-cart.html">view cart</a></li>
-                            </ul>
+                    <a href="cart.html">
+                        <div class="icons col-xs-3 col-md-3" ng-click="cartOpened=!cartOpened">
+                            <i class="icon-basket-01"></i>
+                            <span class="cart-quanity red">1</span> 
                         </div>
-                        <span class="cart-quanity red">1</span> 
-                    </div>
+                    </a>
                 </div>
             </div>
         </header>
