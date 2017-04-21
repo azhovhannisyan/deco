@@ -4504,6 +4504,11 @@ footer input:-moz-placeholder {
         padding: 0;
     }
 
+    .mobile-wishlist-page .thumbnail.mobile-thumbnail .circle-o {
+        top: 0px;
+        right: 5px;
+    }
+
     .logo-part {
         width: 135px;
         float: left;
@@ -5251,7 +5256,6 @@ footer input:-moz-placeholder {
     }
 
     .comfirmation-page {
-        margin: 0;
         padding: 0;
     }
 
@@ -5373,10 +5377,6 @@ footer input:-moz-placeholder {
         margin: 0;
     }
 
-    .shop-quanity {
-        margin: 15px auto;
-    }
-
     .shop-price {
         text-align: left;
         padding: 0;
@@ -5406,14 +5406,19 @@ footer input:-moz-placeholder {
     .cart-items li {
         height: 145px;
         padding: 10px;
+        position: relative;
     }
 
     .cart-items i {
         position: absolute;
         font-size: 20px;
-        right: 0;
-        top: 0;
+        right: 10px;
+        top: 5px;
         margin-top: 0;
+    }
+
+    .cart-items i:hover {
+        color: #002d57;
     }
 
     .gift-code img {
