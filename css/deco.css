@@ -3960,15 +3960,26 @@ footer input:-moz-placeholder {
     text-align: center;
 }
 
- .mobile-search-page .quanity div, #similar .quanity div {
+ .mobile-search-page .quanity div {
     display: inline-block;
     width: 19px;
     text-align: center;
 }
 
- .mobile-search-page .quanity, #similar .quanity {
+ #similar .quanity div {
+    display: inline-block;
+    width: 22px;
+    text-align: center;
+}
+
+ .mobile-search-page .quanity {
     width: 60px;
 }
+
+ #similar .quanity {
+    width: 70px;
+}
+
 
 
 .cart-footer {
@@ -4499,8 +4510,12 @@ footer input:-moz-placeholder {
         clear: both;
     }
 
-    .home-page, .menu-page, .menu-open-page, .cart-page, .mobile-personal-page, .mobile-wishlist-page, .mobile-search-page, .mobile-product-page {
+    .home-page, .menu-page, .menu-open-page, .cart-page, .mobile-personal-page, .mobile-wishlist-page, .mobile-search-page{
         margin-top: 65px;
+        padding: 0;
+    }
+
+    .mobile-product-page {
         padding: 0;
     }
 
@@ -5703,6 +5718,11 @@ footer input:-moz-placeholder {
     .comparision-footer .col-xs-4 div:first-of-type {
         font-size: 30px;
         padding-bottom: 5px;
+    }
+
+    .comparision-footer .col-xs-4 div.glyphicon-print {
+        font-size: 25px;
+        padding: 5px 0;
     }
 
     .comparision-footer .col-xs-4 div:first-of-type:hover {
